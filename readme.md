@@ -17,7 +17,19 @@ You also need to enable the Redator plugin in your Redactor config files stored 
 }
 ```
 
+## Settings
+
+By default all of the plugin's buttons will be added to your toolbar. But this can be changed by adding a '`buttonsInlineStyles`' setting to your Redactor config files.
+
+```javascript
+{
+  buttons: ['formatting','bold','italic'],
+  buttonsInlineStyles: ['code','mark'],
+  plugins: ['inlinestyles']
+}
+```
+
 ## Todo
 
-- Make it possible to add each button individually
+- ~~Make it possible to add each button individually~~
 - Add more styles
