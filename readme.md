@@ -1,5 +1,7 @@
 # Redactor Inline Styles plugin for Craft
 
+![Redactor Inline Styles](https://github.com/carlcs/craft-redactorinlinestyles/blob/master/redactorinlinestyles.png)
+
 Adds additional buttons to apply inline styles to your Redactor toolbar in Craft.
 
 ## Installation

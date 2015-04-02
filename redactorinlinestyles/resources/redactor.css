@@ -7,8 +7,24 @@
 }
 
 /**
- * Override default style for `code` markup.
+ * Override default style for some tags.
  */
+.redactor-editor sup,
+.redactor-editor sub {
+	position: relative;
+	vertical-align: baseline;
+	top: -0.5em;
+	font-size: .75em;
+}
+
+.redactor-editor sub {
+	top: 0.3em;
+}
+
+.redactor-editor mark {
+    background-color: #ff8 !important;
+}
+
 .redactor-editor code {
     background-color: #eee !important;
 }
