@@ -19,6 +19,11 @@ RedactorPlugins.inlinestyles = function()
 			this.button.addCallback(btnSub, this.inlinestyles.formatSub);
 			this.button.addCallback(btnMark, this.inlinestyles.formatMark);
 			this.button.addCallback(btnCode, this.inlinestyles.formatCode);
+
+			this.observe.addButton('sup', 'sup');
+			this.observe.addButton('sub', 'sub');
+			this.observe.addButton('mark', 'mark');
+			this.observe.addButton('code', 'code');
 		},
 		formatSub: function()
 		{
