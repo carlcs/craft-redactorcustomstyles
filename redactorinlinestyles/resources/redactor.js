@@ -3,40 +3,84 @@ if (!RedactorPlugins) var RedactorPlugins = {};
 RedactorPlugins.inlinestyles = function()
 {
 	return {
+
 		init: function ()
 		{
-			var btnSup = this.button.addBefore('unorderedlist', 'sup', 'Superscript');
-			var btnSub = this.button.addBefore('unorderedlist', 'sub', 'Subscript');
-			var btnMark = this.button.addBefore('unorderedlist', 'mark', 'Highlight');
-			var btnCode = this.button.addBefore('unorderedlist', 'code', 'Code');
+			// Get the list of buttons from the config file.
+			var buttonsInlineStyles = this.opts.buttonsInlineStyles;
 
-			this.button.setAwesome('sup', 'fa-superscript');
-			this.button.setAwesome('sub', 'fa-subscript');
-			this.button.setAwesome('mark', 'fa-pencil');
-			this.button.setAwesome('code', 'fa-code');
+			if (typeof buttonsInlineStyles == 'undefined')
+			{
+				buttonsInlineStyles = ['sup','sub','mark','code'];
+			}
 
-			this.button.addCallback(btnSup, this.inlinestyles.formatSup);
-			this.button.addCallback(btnSub, this.inlinestyles.formatSub);
-			this.button.addCallback(btnMark, this.inlinestyles.formatMark);
-			this.button.addCallback(btnCode, this.inlinestyles.formatCode);
+			buttonsInlineStyles.reverse();
 
-			this.observe.addButton('sup', 'sup');
-			this.observe.addButton('sub', 'sub');
-			this.observe.addButton('mark', 'mark');
-			this.observe.addButton('code', 'code');
+			// Set the position it the toolbar the buttons get added.
+			var addAfterButton = 'italic';
+
+			for (var i = 0; i < buttonsInlineStyles.length; i++)
+			{
+				switch (buttonsInlineStyles[i])
+				{
+					case 'sup':
+					{
+						var btnSup = this.button.addAfter(addAfterButton, 'sup', 'Superscript');
+						this.button.setAwesome('sup', 'fa-superscript');
+						this.button.addCallback(btnSup, this.inlinestyles.formatSup);
+						this.observe.addButton('sup', 'sup');
+
+						break;
+					}
+
+					case 'sub':
+					{
+						var btnSub = this.button.addAfter(addAfterButton, 'sub', 'Subscript');
+						this.button.setAwesome('sub', 'fa-subscript');
+						this.button.addCallback(btnSub, this.inlinestyles.formatSub);
+						this.observe.addButton('sub', 'sub');
+
+						break;
+					}
+
+					case 'mark':
+					{
+						var btnMark = this.button.addAfter(addAfterButton, 'mark', 'Highlight');
+						this.button.setAwesome('mark', 'fa-pencil');
+						this.button.addCallback(btnMark, this.inlinestyles.formatMark);
+						this.observe.addButton('mark', 'mark');
+
+						break;
+					}
+
+					case 'code':
+					{
+						var btnCode = this.button.addAfter(addAfterButton, 'code', 'Code');
+						this.button.setAwesome('code', 'fa-code');
+						this.button.addCallback(btnCode, this.inlinestyles.formatCode);
+						this.observe.addButton('code', 'code');
+
+						break;
+					}
+				}
+			}
 		},
+
 		formatSub: function()
 		{
 			this.inline.format('sub');
 		},
+
 		formatSup: function()
 		{
 			this.inline.format('sup');
 		},
+
 		formatMark: function()
 		{
 			this.inline.format('mark');
 		},
+
 		formatCode: function()
 		{
 			this.inline.format('code');
