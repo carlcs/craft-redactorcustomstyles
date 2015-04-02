@@ -8,7 +8,7 @@ To install the plugin, copy the redactorinlinestyles/ folder into craft/plugins/
 
 You also need to enable the Redator plugin in your Redactor config files stored in craft/config/redactor/. Add `'inlinestyles'` to the `'plugins'` setting.
 
-```json
+```javascript
 {
   buttons: ['html','formatting','bold','italic','unorderedlist','orderedlist','link','image','video'],
   plugins: ['fullscreen','inlinestyles']
