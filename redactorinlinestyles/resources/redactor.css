@@ -1,0 +1,14 @@
+
+/**
+ * Bugfix to align Font Awesome icons with default ones.
+ */
+.redactor-toolbar .fa-redactor-btn i::before {
+	top: -0.17em;
+}
+
+/**
+ * Override default style for `code` markup.
+ */
+.redactor-editor code {
+    background-color: #eee !important;
+}
