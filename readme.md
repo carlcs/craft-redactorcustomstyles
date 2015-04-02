@@ -8,7 +8,7 @@ Adds additional buttons to apply inline styles to your Redactor toolbar in Craft
 
 To install the plugin, copy the redactorinlinestyles/ folder into craft/plugins/. Then go to Settings → Plugins and click the "Install" button next to "Redactor Inline Styles".
 
-You also need to enable the Redator plugin in your Redactor config files stored in craft/config/redactor/. Add `'inlinestyles'` to the `'plugins'` setting.
+You also need to enable the Redator plugin in your Redactor config files stored in craft/config/redactor/. Add `'inlinestyles'` to the `plugins` setting.
 
 ```javascript
 {
@@ -19,7 +19,7 @@ You also need to enable the Redator plugin in your Redactor config files stored 
 
 ## Settings
 
-By default all of the plugin's buttons will be added to your toolbar. But this can be changed by adding a '`buttonsInlineStyles`' setting to your Redactor config files.
+By default all of the plugin's buttons will be added to your toolbar. But this can be changed by adding a `buttonsInlineStyles` setting to your Redactor config files.
 
 ```javascript
 {
