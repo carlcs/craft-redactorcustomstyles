@@ -17,8 +17,22 @@ RedactorPlugins.inlinestyles = function()
 			buttonsInlineStyles.reverse();
 
 			// Set the position it the toolbar the buttons get added.
-			var addAfterButton = 'italic';
+			var buttons = this.opts.buttons;
 
+			var addAfterButtons = ['formatting', 'bold', 'italic', 'deleted', 'underline'];
+			var addAfterIndex = 0;
+
+			for (var i = 0; i < addAfterButtons.length; i++)
+			{
+				if (buttons.indexOf(addAfterButtons[i]) > addAfterIndex)
+				{
+					addAfterIndex = buttons.indexOf(addAfterButtons[i]);
+				}
+			}
+
+			var addAfterButton = buttons[addAfterIndex];
+
+			// Add the buttons to the toolbar.
 			for (var i = 0; i < buttonsInlineStyles.length; i++)
 			{
 				switch (buttonsInlineStyles[i])
