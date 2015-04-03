@@ -39,7 +39,7 @@ RedactorPlugins.inlinestyles = function()
 				{
 					case 'sup':
 					{
-						var btnSup = this.button.addAfter(addAfterButton, 'sup', 'Superscript');
+						var btnSup = this.button.addAfter(addAfterButton, 'sup', Craft.t('Superscript'));
 						this.button.setAwesome('sup', 'fa-superscript');
 						this.button.addCallback(btnSup, this.inlinestyles.formatSup);
 						this.observe.addButton('sup', 'sup');
@@ -49,7 +49,7 @@ RedactorPlugins.inlinestyles = function()
 
 					case 'sub':
 					{
-						var btnSub = this.button.addAfter(addAfterButton, 'sub', 'Subscript');
+						var btnSub = this.button.addAfter(addAfterButton, 'sub', Craft.t('Subscript'));
 						this.button.setAwesome('sub', 'fa-subscript');
 						this.button.addCallback(btnSub, this.inlinestyles.formatSub);
 						this.observe.addButton('sub', 'sub');
@@ -59,7 +59,7 @@ RedactorPlugins.inlinestyles = function()
 
 					case 'mark':
 					{
-						var btnMark = this.button.addAfter(addAfterButton, 'mark', 'Highlight');
+						var btnMark = this.button.addAfter(addAfterButton, 'mark', Craft.t('Marked'));
 						this.button.setAwesome('mark', 'fa-pencil');
 						this.button.addCallback(btnMark, this.inlinestyles.formatMark);
 						this.observe.addButton('mark', 'mark');
@@ -69,7 +69,7 @@ RedactorPlugins.inlinestyles = function()
 
 					case 'code':
 					{
-						var btnCode = this.button.addAfter(addAfterButton, 'code', 'Code');
+						var btnCode = this.button.addAfter(addAfterButton, 'code', Craft.t('Code'));
 						this.button.setAwesome('code', 'fa-code');
 						this.button.addCallback(btnCode, this.inlinestyles.formatCode);
 						this.observe.addButton('code', 'code');
@@ -99,5 +99,6 @@ RedactorPlugins.inlinestyles = function()
 		{
 			this.inline.format('code');
 		},
+
 	};
 };

@@ -25,6 +25,8 @@ class RedactorInlineStylesPlugin extends BasePlugin
 
 	public function init()
 	{
+		craft()->templates->includeTranslations('Superscript', 'Subscript', 'Marked', 'Code');
+
 		if (!craft()->isConsole())
 		{
 			if (craft()->request->isCpRequest())
