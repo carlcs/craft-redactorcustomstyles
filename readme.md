@@ -29,7 +29,7 @@ By default all of the plugin's buttons will be added to your toolbar. But this c
 }
 ```
 
-## Available Styles
+### Available Styles
 
 <dl>
   <dt><code>'ins'</code></dt>
@@ -57,4 +57,5 @@ By default all of the plugin's buttons will be added to your toolbar. But this c
 ## Todo
 
 - ~~Make it possible to add each button individually~~
-- Add more styles
+- ~~Add more styles~~
+- Make buttons look better
