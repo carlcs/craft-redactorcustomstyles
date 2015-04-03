@@ -1,18 +1,54 @@
-
 /**
- * Bugfix to align Font Awesome icons with default ones.
+ * Load icon font and apply icons to the buttons.
  */
-.redactor-toolbar .fa-redactor-btn i::before {
-	top: -0.17em;
+@font-face {
+  font-family: 'RedactorInlinestyles';
+    src: url('data:application/octet-stream;base64,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') format('woff');
+}
+
+.redactor-toolbar .re-ins:before {
+	font-family: 'RedactorInlinestyles';
+	content: '\e800';
+}
+
+.redactor-toolbar .re-q:before {
+	font-family: 'RedactorInlinestyles';
+	content: '\e801';
+}
+
+.redactor-toolbar .re-sup:before {
+	font-family: 'RedactorInlinestyles';
+	content: '\e802';
+}
+
+.redactor-toolbar .re-sub:before {
+	font-family: 'RedactorInlinestyles';
+	content: '\e803';
+}
+
+.redactor-toolbar .re-code:before {
+	font-family: 'RedactorInlinestyles';
+	content: '\e806';
+}
+
+.redactor-toolbar .re-small:before {
+	font-family: 'RedactorInlinestyles';
+	content: '\e804';
+}
+
+.redactor-toolbar .re-mark:before {
+	font-family: 'RedactorInlinestyles';
+	content: '\e805';
 }
 
 /**
- * Override default style for some tags.
+ * Override editor style for some tags.
  */
 .redactor-editor q,
 .redactor-editor q:before,
 .redactor-editor q:after {
 	font-style: italic;
+  color: #777;
 }
 
 .redactor-editor q {
@@ -39,14 +75,14 @@
 	top: 0.3em;
 }
 
+.redactor-editor code {
+	background-color: #eee !important;
+}
+
 .redactor-editor small {
 	font-size: 0.75em;
 }
 
 .redactor-editor mark {
 	background-color: #ff8 !important;
-}
-
-.redactor-editor code {
-	background-color: #eee !important;
 }

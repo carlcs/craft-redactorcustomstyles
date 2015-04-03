@@ -5,7 +5,7 @@ return array(
         'Quote' => 'Zitat',
         'Superscript' => 'Hochgestellt',
         'Subscript' => 'Tiefgestellt',
+        'Code' => 'Code',
         'Small Print' => 'Kleingedrucktes',
         'Marked' => 'Markiert',
-        'Code' => 'Code',
 );

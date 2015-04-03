@@ -10,7 +10,7 @@ class RedactorInlineStylesPlugin extends BasePlugin
 
 	function getVersion()
 	{
-		return '1.0';
+		return '1.1';
 	}
 
 	function getDeveloper()
@@ -25,7 +25,7 @@ class RedactorInlineStylesPlugin extends BasePlugin
 
 	public function init()
 	{
-		craft()->templates->includeTranslations('Inserted', 'Quote', 'Superscript', 'Subscript', 'Small Print', 'Marked', 'Code');
+		craft()->templates->includeTranslations('Inserted', 'Quote', 'Superscript', 'Subscript', 'Code', 'Small Print', 'Marked');
 
 		if (!craft()->isConsole())
 		{
@@ -33,7 +33,6 @@ class RedactorInlineStylesPlugin extends BasePlugin
 			{
 				craft()->templates->includeJsResource('redactorinlinestyles/redactor.js');
 				craft()->templates->includeCssResource('redactorinlinestyles/redactor.css');
-				craft()->templates->includeCssResource('redactorinlinestyles/font-awesome/css/font-awesome.css');
 			}
 		}
 	}
