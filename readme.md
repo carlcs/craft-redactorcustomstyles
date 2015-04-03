@@ -32,25 +32,25 @@ By default all of the plugin's buttons will be added to your toolbar. But this c
 ## Available Styles
 
 <dl>
-  <dt><code>&lt;ins&gt;</code></dt>
+  <dt><code>'ins'</code></dt>
   <dd>Inserted text</dd>
 
-  <dt><code>&lt;q&gt;</code></dt>
+  <dt><code>'q'</code></dt>
   <dd>Quote</dd>
 
-  <dt><code>&lt;sup&gt;</code></dt>
+  <dt><code>'sup'</code></dt>
   <dd>Superscript</dd>
 
-  <dt><code>&lt;sub&gt;</code></dt>
+  <dt><code>'sub'</code></dt>
   <dd>Subscript</dd>
 
-  <dt><code>&lt;small&gt;</code></dt>
+  <dt><code>'small'</code></dt>
   <dd>Small print</dd>
 
-  <dt><code>&lt;mark&gt;</code></dt>
+  <dt><code>'mark'</code></dt>
   <dd>Marked / highlighted text</dd>
 
-  <dt><code>&lt;code&gt;</code></dt>
+  <dt><code>'code'</code></dt>
   <dd>Code</dd>
 </dl>
 
