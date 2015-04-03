@@ -9,22 +9,44 @@
 /**
  * Override default style for some tags.
  */
+.redactor-editor q,
+.redactor-editor q:before,
+.redactor-editor q:after {
+	font-style: italic;
+}
+
+.redactor-editor q {
+	quotes: '“' '”' '‘' '’';
+}
+
+.redactor-editor q:before {
+	content: open-quote;
+}
+
+.redactor-editor q:after {
+	content: close-quote;
+}
+
 .redactor-editor sup,
 .redactor-editor sub {
 	position: relative;
 	vertical-align: baseline;
 	top: -0.5em;
-	font-size: .75em;
+	font-size: 0.75em;
 }
 
 .redactor-editor sub {
 	top: 0.3em;
 }
 
+.redactor-editor small {
+	font-size: 0.75em;
+}
+
 .redactor-editor mark {
-    background-color: #ff8 !important;
+	background-color: #ff8 !important;
 }
 
 .redactor-editor code {
-    background-color: #eee !important;
+	background-color: #eee !important;
 }
