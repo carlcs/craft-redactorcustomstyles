@@ -8,4 +8,5 @@ return array(
         'Code' => 'Code',
         'Small Print' => 'Kleingedrucktes',
         'Marked' => 'Markiert',
+        'Prevent Line Breaks' => 'Zeilenumbruch verhindern',
 );

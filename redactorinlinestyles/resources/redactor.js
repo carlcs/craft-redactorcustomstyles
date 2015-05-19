@@ -27,7 +27,7 @@ RedactorPlugins.inlinestyles = function()
 
 			if (typeof buttonsInlineStyles == 'undefined')
 			{
-				buttonsInlineStyles = ['ins', 'q', 'sup', 'sub', 'code', 'small', 'mark'];
+				buttonsInlineStyles = ['ins', 'q', 'sup', 'sub', 'code', 'small', 'mark', 'nobr'];
 			}
 
 			buttonsInlineStyles.reverse();
@@ -100,6 +100,15 @@ RedactorPlugins.inlinestyles = function()
 
 						break;
 					}
+
+					case 'nobr':
+					{
+						var btnNobr = this.button.addAfter(addAfterButton, 'nobr', Craft.t('Prevent Line Breaks'));
+						this.button.addCallback(btnNobr, this.inlinestyles.formatNobr);
+						this.observe.addButton('nobr', 'nobr');
+
+						break;
+					}
 				}
 			}
 		},
@@ -137,6 +146,11 @@ RedactorPlugins.inlinestyles = function()
 		formatMark: function()
 		{
 			this.inline.format('mark');
+		},
+
+		formatNobr: function()
+		{
+			this.inline.format('span', 'class', 'nobr');
 		},
 
 	};
