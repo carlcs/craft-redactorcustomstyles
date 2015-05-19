@@ -35,6 +35,7 @@ The following inline styles are available for configuration:
 - <code>'q'</code> Quote
 - <code>'sup'</code> Superscript
 - <code>'sub'</code> Subscript
-- <code>'code'</code> Code</dl>
+- <code>'code'</code> Code
 - <code>'small'</code> Small print
 - <code>'mark'</code> Marked / highlighted text
+- <code>'nobr'</code> Prevent line breaks
