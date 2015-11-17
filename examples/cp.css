@@ -1,0 +1,217 @@
+/**
+ * Style Redactor editor like you want!
+ *
+ * Set the URL to a stylesheet via the "cssFile" setting in your craft/config/redactorinlinestyles.php
+ * config file and the styles get loaded with every CP site request (this disables the plugin's default styles!).
+ */
+
+.redactor-box q,
+.redactor-dropdown-quote {
+  quotes: '«\A0' '\A0»' !important;  /* FR */
+  quotes: '„' '“' '‚' '‘' !important; /* DE */
+}
+
+.redactor-editor {
+  font-family: HelveticaNeue, sans-serif !important;
+  font-size: 14px !important;
+}
+
+.re-button-icon {
+  width: 17px !important;
+  height: 17px !important;
+  margin: 0 !important;
+}
+
+/* Plugin defaults
+   ========================================================================== */
+
+/**
+ * Quotes
+ */
+
+.redactor-box q,
+.redactor-dropdown-quote {
+  quotes: '“' '”' '‘' '’';
+}
+
+/**
+ * Toolbar icons
+ */
+
+.re-button-icon {
+  width: 15px;
+  height: 15px;
+  margin: -1px;
+  fill: #29323d;
+  vertical-align: top;
+}
+
+.redactor-act .re-button-icon {
+  fill: #ffffff;
+}
+
+.re-deleted {
+  text-decoration: none !important;
+}
+
+/**
+ * Toolbar dropdown options
+ */
+
+.redactor-dropdown-superscript,
+.redactor-dropdown-subscript,
+.redactor-dropdown-smallprint {
+	font-size: 0.75em;
+}
+
+.redactor-dropdown-quote,
+.redactor-dropdown-quote:before,
+.redactor-dropdown-quote:after,
+.redactor-dropdown-sourcecitation {
+	font-style: italic;
+  color: #777 !important;
+}
+
+.redactor-dropdown-quote:hover:before,
+.redactor-dropdown-quote:hover:after {
+  color: #fff !important;
+}
+
+.redactor-dropdown-quote:before {
+	content: open-quote;
+}
+
+.redactor-dropdown-quote:after {
+	content: close-quote;
+}
+
+.redactor-dropdown-keyboardinput,
+.redactor-dropdown-code,
+.redactor-dropdown-htmltwig,
+.redactor-dropdown-css,
+.redactor-dropdown-js,
+.redactor-dropdown-php {
+  font-family: Menlo, Monaco, Consolas, monospace;
+}
+
+.redactor-dropdown-keyboardinput {
+	background-color: #777;
+  color: #fff !important;
+}
+
+.redactor-dropdown-code,
+.redactor-dropdown-htmltwig,
+.redactor-dropdown-css,
+.redactor-dropdown-js,
+.redactor-dropdown-php {
+	background-color: #eee;
+}
+
+.redactor-dropdown-deleted {
+  text-decoration: line-through !important;
+}
+
+.redactor-dropdown-inserted {
+  /*border-bottom: 1px dotted #777 !important;*/
+  text-decoration: underline !important;
+}
+
+.redactor-dropdown-marked {
+	background-color: #ff8;
+}
+
+/**
+ * Editor
+ */
+
+.redactor-editor sup,
+.redactor-editor sub {
+	position: relative;
+	vertical-align: baseline;
+	top: -0.5em;
+	font-size: 0.75em;
+}
+
+.redactor-editor sub {
+	top: 0.3em;
+}
+
+.redactor-editor q,
+.redactor-editor q:before,
+.redactor-editor q:after,
+.redactor-editor cite {
+	font-style: italic;
+  color: #777;
+}
+
+.redactor-editor q:before {
+	content: open-quote;
+}
+
+.redactor-editor q:after {
+	content: close-quote;
+}
+
+.redactor-editor mark,
+.redactor-editor code,
+.redactor-editor samp,
+.redactor-editor kbd {
+  display: inline !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+.redactor-editor kbd {
+	background-color: #777 !important;
+  color: #fff;
+}
+
+.redactor-editor code {
+	background-color: #eee !important;
+}
+
+.redactor-editor small {
+	font-size: 0.75em;
+}
+
+.redactor-editor ins {
+	border-bottom: 1px dotted #777;
+  text-decoration: none !important;
+}
+
+.redactor-editor mark {
+	background-color: #ff8 !important;
+}
+
+.redactor-editor .nobr {
+  white-space: nowrap;
+}
+
+.redactor-editor .nobr:before,
+.redactor-editor .nobr:after {
+	color: #bbb;
+}
+
+.redactor-editor .nobr:before {
+	content: '[';
+}
+
+.redactor-editor .nobr:after {
+	content: ']';
+}
+
+.redactor-editor .align-left {
+  text-align: left;
+}
+
+.redactor-editor .align-center {
+  text-align: center;
+}
+
+.redactor-editor .align-right {
+  text-align: right;
+}
+
+.redactor-editor .align-justify {
+  text-align: justify;
+}

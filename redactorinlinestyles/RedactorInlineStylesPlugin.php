@@ -10,7 +10,12 @@ class RedactorInlineStylesPlugin extends BasePlugin
 
 	function getVersion()
 	{
-		return '1.1';
+		return '2.0';
+	}
+
+	function getSchemaVersion()
+	{
+		return null;
 	}
 
 	function getDeveloper()
@@ -23,16 +28,69 @@ class RedactorInlineStylesPlugin extends BasePlugin
 		return 'https://github.com/carlcs/craft-redactorinlinestyles';
 	}
 
+	function getDocumentationUrl()
+        {
+                return 'https://github.com/carlcs/craft-redactorinlinestyles';
+        }
+
+	function getReleaseFeedUrl()
+        {
+                return 'https://github.com/carlcs/craft-redactorinlinestyles/raw/master/releases.json';
+        }
+
 	public function init()
 	{
-		craft()->templates->includeTranslations('Inserted', 'Quote', 'Superscript', 'Subscript', 'Code', 'Small Print', 'Marked', 'Prevent Line Breaks');
-
 		if (!craft()->isConsole())
 		{
 			if (craft()->request->isCpRequest())
 			{
-				craft()->templates->includeJsResource('redactorinlinestyles/redactor.js');
-				craft()->templates->includeCssResource('redactorinlinestyles/redactor.css');
+				// Prepare config
+				$config = array();
+
+				$config['buttonsAdd'] = craft()->config->get('buttonsAdd', 'redactorinlinestyles');
+				$config['buttonsAddAfter'] = craft()->config->get('buttonsAddAfter', 'redactorinlinestyles');
+				$config['setIcons'] = craft()->config->get('setIcons', 'redactorinlinestyles');
+
+				if (craft()->config->get('iconsFile', 'redactorinlinestyles'))
+				{
+					$url = craft()->config->get('iconsFile', 'redactorinlinestyles');
+					$config['iconsFile'] = craft()->config->parseEnvironmentString($url);
+				}
+				else
+				{
+					$config['iconsFile'] = UrlHelper::getResourceUrl('redactorinlinestyles/icons/redactor-i.svg');
+				}
+
+				// Include JS
+				$config = JsonHelper::encode($config);
+
+				$js = "var RedactorInlineStyles = {}; RedactorInlineStyles.config = {$config};";
+
+				craft()->templates->includeJs($js);
+				craft()->templates->includeJsResource('redactorinlinestyles/redactorinlinestyles.js');
+
+				// Include CSS
+				if (craft()->config->get('cssFile', 'redactorinlinestyles'))
+				{
+					$url = craft()->config->get('cssFile', 'redactorinlinestyles');
+					$url = craft()->config->parseEnvironmentString($url);
+					craft()->templates->includeCssFile($url);
+				}
+				else
+				{
+					craft()->templates->includeCssResource('redactorinlinestyles/redactorinlinestyles.css');
+				}
+
+				// Include Translations
+				$translatable = craft()->config->get('translatable', 'redactorinlinestyles');
+				call_user_func_array(array(craft()->templates, 'includeTranslations'), $translatable);
+
+				// Add external spritemaps support for IE9+ and Edge 12
+				if (craft()->config->get('ieShim', 'redactorinlinestyles') !== false)
+				{
+					craft()->templates->includeJsResource('redactorinlinestyles/lib/svg4everybody.min.js');
+					craft()->templates->includeJs('svg4everybody();');
+				}
 			}
 		}
 	}

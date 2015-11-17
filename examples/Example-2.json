@@ -1,0 +1,93 @@
+{
+	"buttons": ["format","bold","italic","lists","link"],
+	"plugins": ["inlinestyles","source","fullscreen"],
+	"toolbarFixed": false,
+	"setIcons": {
+		"html": "html",
+		"format": "format",
+		"bold": "bold",
+		"italic": "italic",
+		"lists": "lists",
+		"link": "link",
+		"fullscreen": "fullscreen",
+	},
+	"buttonsAddAfter": "italic",
+	"buttonsAdd": [
+		{
+			"title": "Quote",
+			"icon": "quote",
+			"args": ["q"],
+		},
+		{
+			"title": "Code",
+			"icon": "code",
+			"dropdown": [
+				{
+					"title": "HTML/Twig",
+					"args": ["code","class","language-twig"],
+				},
+				{
+					"title": "CSS",
+					"args": ["code","class","language-css"],
+				},
+				{
+					"title": "JS",
+					"args": ["code","class","language-js"],
+				},
+				{
+					"title": "PHP",
+					"args": ["code","class","language-php"],
+				},
+			],
+		},
+		{
+			"title": "Marked",
+			"icon": "marked",
+			"args": ["mark"],
+		},
+		{
+			"title": "Prevent line-break",
+			"icon": "preventlinebreak",
+			"args": ["span","class","nobr"],
+		},
+		{
+			"title": "Style",
+			"icon": "ellipsis",
+			"addAfter": "link",
+			"dropdown": [
+				{
+					"title": "Superscript",
+					"args": ["sup"],
+				},
+				{
+					"title": "Subscript",
+					"args": ["sub"],
+				},
+				{
+					"title": "Source citation",
+					"args": ["cite"],
+				},
+				{
+					"title": "Keyboard input",
+					"args": ["kdb"],
+				},
+				{
+					"title": "Small print",
+					"args": ["small"],
+				},
+				{
+					"title": "Deleted",
+					"args": ["del"],
+				},
+				{
+					"title": "Inserted",
+					"args": ["ins"],
+				},
+				{
+					"title": "Remove all styles",
+					"clear": true,
+				},
+			],
+		},
+	],
+}

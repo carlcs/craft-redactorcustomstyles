@@ -1,0 +1,212 @@
+{
+	"buttons": ["format","bold","italic","lists","file","image","link","horizontalrule"],
+	"plugins": ["inlinestyles","source","video","table","fullscreen"],
+	"toolbarFixed": false,
+
+	/**
+	 * Maps icons to buttons.
+	 *
+	 * Key-value pairs to map icons (referenced SVG symbol elements) to your toolbar buttons. You can
+	 * reference icons from your own SVG file if you prefer. Just set the path to it via the "iconsFile"
+ 	 * setting in your craft/config/redactorinlinestyles.php config file.
+	 *
+	 * key:   The button's rel attribute value (usually the button's title without whitespace).
+	 * value: The symbol element's ID attribute value.
+	 */
+	"setIcons": {
+		"html": "html",
+		"format": "format",
+		"bold": "bold",
+		"italic": "italic",
+		"lists": "lists",
+		"file": "file",
+		"image": "image",
+		"video": "video",
+		"table": "table",
+		"link": "link",
+		"horizontalrule": "horizontalrule",
+		"fullscreen": "fullscreen",
+		"superscript": "superscript",
+		"subscript": "subscript",
+		"quote": "quote",
+		"sourcecitation": "sourcecitation",
+		"keyboardinput": "keyboardinput",
+		"code": "code",
+		"smallprint": "smallprint",
+		"deleted": "deleted",
+		"inserted": "inserted",
+		"marked": "marked",
+		"preventlinebreak": "preventlinebreak",
+		"removeallstyles": "removeallstyles",
+		"alignleft": "alignleft",
+		"alignright": "alignright",
+	  "aligncenter": "aligncenter",
+		"justify": "justify",
+		"alignment": "alignment",
+		"style": "ellipsis",
+	},
+
+	/**
+	 * Sets the default position of all Inline Styles buttons.
+	 */
+	"buttonsAddAfter": "italic",
+
+	/**
+	 * Adds additional buttons to your toolbar.
+	 *
+	 * Configure the buttons using the following properties:
+	 * - title:    Sets the button's title (only visable if you have no icon specified).
+	 * - icon:     Sets an icon (the symbol element's ID attribute value).
+	 * - addAfter: Sets the default position of all Inline Styles buttons.
+	 *
+	 * Use either the dropdown property to make your button trigger a dropdown:
+	 * - dropdown: Configures the dropdown options.
+	 *
+	 * Or give your button an action using the following properties:
+	 * - args:     The HTML element to wrap the selected text (for inline elements) or the HTML element to be
+	 *             applied to the block element surrounding the selection (for block-level elements). HTML attributes
+	 *             can be added to the tag like so: `["mark", "data-concern", "review"]`.
+	 * - clear:    Removes all inline formatting before the tag is add
+	 */
+	"buttonsAdd": [
+		{
+			"title": "Superscript",
+			"args": ["sup"],
+		},
+		{
+			"title": "Subscript",
+			"args": ["sub"],
+		},
+		{
+			"title": "Quote",
+			"args": ["q"],
+		},
+		{
+			"title": "Source citation",
+			"args": ["cite"],
+		},
+		{
+			"title": "Keyboard input",
+			"args": ["kdb"],
+		},
+		{
+			"title": "Code",
+			"args": ["code"],
+		},
+		{
+			"title": "Small print",
+			"args": ["small"],
+		},
+		{
+			"title": "Deleted",
+			"args": ["del"],
+		},
+		{
+			"title": "Inserted",
+			"args": ["ins"],
+		},
+		{
+			"title": "Marked",
+			"args": ["mark"],
+		},
+		{
+			"title": "Remove all styles",
+			"clear": true,
+		},
+		{
+			"title": "Prevent line-break",
+			"args": ["span","class","nobr"],
+		},
+		{
+			"title": "Align left",
+			"args": ["p","class","align-left"],
+		},
+		{
+			"title": "Align right",
+			"args": ["p","class","align-right"],
+		},
+		{
+			"title": "Align center",
+			"args": ["p","class","align-center"],
+		},
+		{
+			"title": "Justify",
+			"args": ["p","class","align-justify"],
+		},
+		{
+			"title": "Alignment",
+			"dropdown": [
+				{
+					"title": "Align left",
+					"args": ["p","class","align-left"],
+				},
+				{
+					"title": "Align right",
+					"args": ["p","class","align-right"],
+				},
+				{
+					"title": "Align center",
+					"args": ["p","class","align-center"],
+				},
+				{
+					"title": "Justify",
+					"args": ["p","class","align-justify"],
+				},
+			],
+		},
+		{
+			"title": "Style",
+			"addAfter": "horizontalrule",
+			"dropdown": [
+				{
+					"title": "Superscript",
+					"args": ["sup"],
+				},
+				{
+					"title": "Subscript",
+					"args": ["sub"],
+				},
+				{
+					"title": "Quote",
+					"args": ["q"],
+				},
+				{
+					"title": "Source citation",
+					"args": ["cite"],
+				},
+				{
+					"title": "Keyboard input",
+					"args": ["kdb"],
+				},
+				{
+					"title": "Code",
+					"args": ["code"],
+				},
+				{
+					"title": "Small print",
+					"args": ["small"],
+				},
+				{
+					"title": "Deleted",
+					"args": ["del"],
+				},
+				{
+					"title": "Inserted",
+					"args": ["ins"],
+				},
+				{
+					"title": "Marked",
+					"args": ["mark"],
+				},
+				{
+					"title": "Prevent line-break",
+					"args": ["span","class","nobr"],
+				},
+				{
+					"title": "Remove all styles",
+					"clear": true,
+				},
+			],
+		},
+	],
+}
