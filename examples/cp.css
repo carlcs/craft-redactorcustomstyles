@@ -26,6 +26,21 @@
    ========================================================================== */
 
 /**
+ * Show toolbar icons for small screens only
+ */
+
+@media only screen and (min-width: 576px)
+{
+  .re-button:not(.re-bold):not(.re-italic):before {
+    content: attr(aria-label);
+  }
+
+  .re-button-icon {
+    display: none;
+  }
+}
+
+/**
  * Quotes
  */
 
