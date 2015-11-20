@@ -1,5 +1,15 @@
 [
   {
+    "version": "1.2.1",
+    "downloadUrl": "https://github.com/carlcs/craft-autoexpire/archive/v2.0.1.zip",
+    "date": "2015-11-20T20:00:00-01:00",
+    "notes": [
+      "[Improved] Dropdown styles for default and exmaple configs outdated for Redactor II 1.1 markup.",
+      "[Fixed] Prevent line-breaks button now uses `<nobr>` tags, it's currently not possible to add `<span>` tags.",
+      "[Fixed] Fixed the editor styles for `<kbd>` and `<nobr>`."
+    ]
+  },
+  {
     "version": "2.0",
     "downloadUrl": "https://github.com/carlcs/craft-autoexpire/archive/v2.0.zip",
     "date": "2015-11-17T18:00:00-01:00",

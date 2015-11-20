@@ -61,7 +61,7 @@ return array(
                                 ),
                                 array(
                                         'title' => 'Keyboard input',
-                                        'args' => ['kdb'],
+                                        'args' => ['kbd'],
                                 ),
                                 array(
                                         'title' => 'Code',
@@ -85,7 +85,7 @@ return array(
                                 ),
                                 array(
                                         'title' => 'Prevent line-break',
-                                        'args' => ['span', 'class', 'nobr'],
+                                        'args' => ['nobr'],
                                 ),
                                 array(
                                         'title' => 'Remove all styles',

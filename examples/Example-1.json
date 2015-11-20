@@ -87,7 +87,7 @@
 		},
 		{
 			"title": "Keyboard input",
-			"args": ["kdb"],
+			"args": ["kbd"],
 		},
 		{
 			"title": "Code",
@@ -176,7 +176,7 @@
 				},
 				{
 					"title": "Keyboard input",
-					"args": ["kdb"],
+					"args": ["kbd"],
 				},
 				{
 					"title": "Code",

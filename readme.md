@@ -74,14 +74,3 @@ Redactor Inline Styles requires Craft 2.5 or above.
 ## Known Issues
 
 - It's not possible to add `<span>` tags (Redactor bug).
-
-
-
-
-
-
-
-
-
-
-.
