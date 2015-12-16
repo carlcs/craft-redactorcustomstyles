@@ -1,10 +1,21 @@
 [
   {
-    "version": "1.2.1",
+    "version": "2.0.2",
+    "downloadUrl": "https://github.com/carlcs/craft-autoexpire/archive/v2.0.2.zip",
+    "date": "2015-12-16T01:00:00-01:00",
+    "notes": [
+      "[Added] Added tooltips to icon buttons.",
+      "[Added] Added a color dropdown to the Example-1 configuration.",
+      "[Improved] The plugin's default configuration now uses the new textual style buttons. Removed the media query to show icons for smaller viewport widths.",
+      "[Improved] Disabled button active state styles, they only worked for `<strong>` and `<em>` buttons.",
+    ]
+  },
+  {
+    "version": "2.0.1",
     "downloadUrl": "https://github.com/carlcs/craft-autoexpire/archive/v2.0.1.zip",
     "date": "2015-11-20T20:00:00-01:00",
     "notes": [
-      "[Improved] Dropdown styles for default and exmaple configs outdated for Redactor II 1.1 markup.",
+      "[Improved] Dropdown styles for default and example configs updated for Redactor II 1.1.",
       "[Fixed] Prevent line-breaks button now uses `<nobr>` tags, it's currently not possible to add `<span>` tags.",
       "[Fixed] Fixed the editor styles for `<kbd>` and `<nobr>`."
     ]

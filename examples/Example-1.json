@@ -43,6 +43,7 @@
 	  "aligncenter": "aligncenter",
 		"justify": "justify",
 		"alignment": "alignment",
+		"color": "color",
 		"style": "ellipsis",
 	},
 
@@ -118,45 +119,20 @@
 			"args": ["span","class","nobr"],
 		},
 		{
-			"title": "Align left",
-			"args": ["p","class","align-left"],
-		},
-		{
-			"title": "Align right",
-			"args": ["p","class","align-right"],
-		},
-		{
-			"title": "Align center",
-			"args": ["p","class","align-center"],
-		},
-		{
-			"title": "Justify",
-			"args": ["p","class","align-justify"],
-		},
-		{
-			"title": "Alignment",
+			"title": "Color",
 			"dropdown": [
 				{
-					"title": "Align left",
-					"args": ["p","class","align-left"],
+					"title": "Blue",
+					"args": ["em","class","color--blue"],
 				},
 				{
-					"title": "Align right",
-					"args": ["p","class","align-right"],
-				},
-				{
-					"title": "Align center",
-					"args": ["p","class","align-center"],
-				},
-				{
-					"title": "Justify",
-					"args": ["p","class","align-justify"],
+					"title": "Green",
+					"args": ["em","class","color--green"],
 				},
 			],
 		},
 		{
 			"title": "Style",
-			"addAfter": "horizontalrule",
 			"dropdown": [
 				{
 					"title": "Superscript",
@@ -205,6 +181,43 @@
 				{
 					"title": "Remove all styles",
 					"clear": true,
+				},
+			],
+		},
+		{
+			"title": "Align left",
+			"args": ["p","class","align-left"],
+		},
+		{
+			"title": "Align right",
+			"args": ["p","class","align-right"],
+		},
+		{
+			"title": "Align center",
+			"args": ["p","class","align-center"],
+		},
+		{
+			"title": "Justify",
+			"args": ["p","class","align-justify"],
+		},
+		{
+			"title": "Alignment",
+			"dropdown": [
+				{
+					"title": "Align left",
+					"args": ["p","class","align-left"],
+				},
+				{
+					"title": "Align right",
+					"args": ["p","class","align-right"],
+				},
+				{
+					"title": "Align center",
+					"args": ["p","class","align-center"],
+				},
+				{
+					"title": "Justify",
+					"args": ["p","class","align-justify"],
 				},
 			],
 		},

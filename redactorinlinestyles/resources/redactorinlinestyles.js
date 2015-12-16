@@ -20,6 +20,9 @@ RedactorPlugins.inlinestyles = function()
 
       // Set (additional) button icons
       this.inlinestyles.changeButtonIcons();
+
+      // Add tooltips to icon buttons
+      this.inlinestyles.addButtonsTooltips();
     },
 
     addButtons: function()
@@ -101,6 +104,13 @@ RedactorPlugins.inlinestyles = function()
           }, this));
   			}, this), 0);
       }
+    },
+
+    addButtonsTooltips: function()
+    {
+      setTimeout(function() {
+        $('.re-button:has(svg)').addClass('re-button-tooltip');
+      }, 0);
     },
 
     createClassName: function(str)

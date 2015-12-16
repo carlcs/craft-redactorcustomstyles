@@ -5,11 +5,33 @@
  * config file and the styles get loaded with every CP site request (this disables the plugin's default styles!).
  */
 
+/**
+ * Quotes config
+ */
+
 .redactor-box q,
 .redactor-dropdown-quote {
   quotes: '«\A0' '\A0»' !important;  /* FR */
   quotes: '„' '“' '‚' '‘' !important; /* DE */
 }
+
+/**
+ * Colors Dropdown
+ */
+
+.redactor-editor .color--blue,
+.redactor-dropdown-blue span {
+  color: #0000FF !important;
+}
+
+.redactor-editor .color--green,
+.redactor-dropdown-green span {
+  color: #3CB371 !important;
+}
+
+/**
+ * Editor
+ */
 
 .redactor-editor {
   font-family: HelveticaNeue, sans-serif !important;
@@ -26,22 +48,7 @@
    ========================================================================== */
 
 /**
- * Show toolbar icons for small screens only
- */
-
-@media only screen and (min-width: 576px)
-{
-  .re-button:not(.re-bold):not(.re-italic):before {
-    content: attr(aria-label);
-  }
-
-  .re-button-icon {
-    display: none;
-  }
-}
-
-/**
- * Quotes
+ * Quotes config
  */
 
 .redactor-box q,
@@ -50,7 +57,7 @@
 }
 
 /**
- * Toolbar icons
+ * Toolbar buttons
  */
 
 .re-button-icon {
@@ -61,12 +68,48 @@
   vertical-align: top;
 }
 
-.redactor-act .re-button-icon {
-  fill: #ffffff;
+.redactor-act:not(.dropact) {
+  background-color: transparent !important;
+  color: #29323d !important;
+}
+
+.redactor-act:not(.dropact):hover {
+  background-color: #d5d8dd !important;
+  color: #29323d !important;
 }
 
 .re-deleted {
   text-decoration: none !important;
+}
+
+/**
+ * Tooltips
+ */
+
+.re-button-tooltip {
+  position: relative;
+}
+
+.re-button-tooltip:not(.dropact):hover:after {
+  opacity: 1;
+}
+
+.re-button-tooltip:after {
+  opacity: 0;
+  pointer-events: none;
+  content: attr(aria-label);
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 42px;
+  padding: 4px 7px;
+  border-radius: 2px;
+  background: #000;
+  color: #fff;
+  white-space: nowrap;
+  font-weight: normal;
+  font-style: normal;
 }
 
 /**

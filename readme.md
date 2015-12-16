@@ -44,8 +44,9 @@ Elements available without further plugin configuration:
 - `<del>`: Deleted
 - `<ins>`: Inserted
 - `<mark>`: Marked
-- `<span class="nobr">`: Prevent line-break
+- `<nobr>`: Prevent line-break
 
+Note: The `<nobr>` tag is not standard HTML and should not be used. But as Redactor currently doesn't allow to add `<span>` tags at all, the plugin uses `<nobr>` that you should replace in your Template with `<span style="white-space: nowrap">`.
 
 ## Configuration
 
