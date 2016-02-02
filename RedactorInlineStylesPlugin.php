@@ -10,7 +10,7 @@ class RedactorInlineStylesPlugin extends BasePlugin
 
     public function getVersion()
     {
-        return '2.0.2';
+        return '2.0.3';
     }
 
     public function getSchemaVersion()
