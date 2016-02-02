@@ -1,12 +1,12 @@
-# Redactor Inline Styles plugin for Craft
+# Redactor Inline Styles plugin for Craft CMS
 
-![Redactor Inline Styles](https://github.com/carlcs/craft-redactorinlinestyles/blob/master/redactorinlinestyles.png)
+![Redactor Inline Styles](https://github.com/carlcs/craft-redactorinlinestyles/blob/master/resources/screenshot.png)
 
 This Craft plugin makes it possible to add additional formatting buttons and dropdown lists to your Redactor editor toolbar. It provides a number of ready to use buttons to add the most commonly used text-level semantics to your content, e.g., `<q>`, `<code>` or `<mark>` elements.
 
 Buttons and dropdowns can be customized via [Redactor config settings][1]. You should use them to make your editor formatting options match the styles available in your website or application. Regardless of the plugin name, it is also possible to configure formatting options to style block-level elements (Note: to customize the default Format dropdown, use Redactor's [`formattingAdd`][2] setting).
 
-![Redactor Inline Styles](https://github.com/carlcs/craft-redactorinlinestyles/blob/master/redactorinlinestyles-1.png)
+![Redactor Inline Styles](https://github.com/carlcs/craft-redactorinlinestyles/blob/master/resources/screenshot-1.png)
 
 The plugin also allows to add icons to your default toolbar buttons, to make your Craft 2.5 Rich Text fields with Redactor II look like they always did (or even better!).
 
@@ -65,7 +65,7 @@ It is also possible to configure the plugin with a redactorinlinestyles.php
 - `cssFile`: Configure a custom CSS file with custom toolbar and editor styles.
 
 
-  [3]: examples/Example-1.json
+  [3]: _examples/Example-1.json
   [4]: http://buildwithcraft.com/docs/plugins/plugin-settings#config-file
 
 ## Requirements
