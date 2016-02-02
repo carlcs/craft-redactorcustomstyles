@@ -22,7 +22,7 @@ RedactorPlugins.inlinestyles = function()
       this.inlinestyles.changeButtonIcons();
 
       // Add tooltips to icon buttons
-      this.inlinestyles.addButtonsTooltips();
+      this.inlinestyles.addButtonTooltips();
     },
 
     addButtons: function()
@@ -106,7 +106,7 @@ RedactorPlugins.inlinestyles = function()
       }
     },
 
-    addButtonsTooltips: function()
+    addButtonTooltips: function()
     {
       setTimeout(function() {
         $('.re-button:has(svg)').addClass('re-button-tooltip');
