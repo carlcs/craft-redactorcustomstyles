@@ -14,98 +14,98 @@
  * https://icomoon.io/app
  */
 return array(
-        'cssFile' => '/assets/css/cp.css',
-        'iconsFile' => '/assets/svg/icons/cp.svg',
-        'setIcons' => array(
-                'html' => 'settings',
-                'format' => 'format_size',
-                'bold' => 'format_bold',
-                'italic' => 'format_italic',
-                'lists' => 'format_list_bulleted',
-                'file' => 'attach_file',
-                'image' => 'crop_original',
-                'video' => 'ondemand_video',
-                'table' => 'border_all',
-                'link' => 'insert_link',
-                'horizontalrule' => 'remove',
-                'fullscreen' => 'fullscreen',
-                'quote' => 'format_quote',
-                'code' => 'code',
-                'marked' => 'create',
-                'preventlinebreak' => 'block',
-                'style' => 'more_vert',
+    'cssFile' => '/assets/css/cp.css',
+    'iconsFile' => '/assets/svg/icons/cp.svg',
+    'setIcons' => array(
+        'html' => 'settings',
+        'format' => 'format_size',
+        'bold' => 'format_bold',
+        'italic' => 'format_italic',
+        'lists' => 'format_list_bulleted',
+        'file' => 'attach_file',
+        'image' => 'crop_original',
+        'video' => 'ondemand_video',
+        'table' => 'border_all',
+        'link' => 'insert_link',
+        'horizontalrule' => 'remove',
+        'fullscreen' => 'fullscreen',
+        'quote' => 'format_quote',
+        'code' => 'code',
+        'marked' => 'create',
+        'preventlinebreak' => 'block',
+        'style' => 'more_vert',
+    ),
+    'buttonsAddAfter' => 'italic',
+    'buttonsAdd' => array(
+        array(
+            'title' => 'Quote',
+            'args' => ['q'],
         ),
-        'buttonsAddAfter' => 'italic',
-        'buttonsAdd' => array(
+        array(
+            'title' => 'Code',
+            'dropdown' => array(
                 array(
-                        'title' => 'Quote',
-                        'args' => ['q'],
+                    'title' => 'HTML/Twig',
+                    'args' => ['code', 'class', 'language-twig'],
                 ),
                 array(
-                        'title' => 'Code',
-                        'dropdown' => array(
-                                array(
-                                        'title' => 'HTML/Twig',
-                                        'args' => ['code', 'class', 'language-twig'],
-                                ),
-                                array(
-                                        'title' => 'CSS',
-                                        'args' => ['code', 'class', 'language-css'],
-                                ),
-                                array(
-                                        'title' => 'JS',
-                                        'args' => ['code', 'class', 'language-js'],
-                                ),
-                                array(
-                                        'title' => 'PHP',
-                                        'args' => ['code', 'class', 'language-php'],
-                                ),
-                        ),
+                    'title' => 'CSS',
+                    'args' => ['code', 'class', 'language-css'],
                 ),
                 array(
-                        'title' => 'Marked',
-                        'args' => ['mark'],
+                    'title' => 'JS',
+                    'args' => ['code', 'class', 'language-js'],
                 ),
                 array(
-                        'title' => 'Prevent line-break',
-                        'args' => ['span', 'class', 'nobr'],
+                    'title' => 'PHP',
+                    'args' => ['code', 'class', 'language-php'],
                 ),
-                array(
-                        'title' => 'Style',
-                        'dropdown' => array(
-                                array(
-                                        'title' => 'Superscript',
-                                        'args' => ['sup'],
-                                ),
-                                array(
-                                        'title' => 'Subscript',
-                                        'args' => ['sub'],
-                                ),
-                                array(
-                                        'title' => 'Source citation',
-                                        'args' => ['cite'],
-                                ),
-                                array(
-                                        'title' => 'Keyboard input',
-                                        'args' => ['kdb'],
-                                ),
-                                array(
-                                        'title' => 'Small print',
-                                        'args' => ['small'],
-                                ),
-                                array(
-                                        'title' => 'Deleted',
-                                        'args' => ['del'],
-                                ),
-                                array(
-                                        'title' => 'Inserted',
-                                        'args' => ['ins'],
-                                ),
-                                array(
-                                        'title' => 'Remove all styles',
-                                        'clear' => true,
-                                ),
-                        ),
-                ),
+            ),
         ),
+        array(
+            'title' => 'Marked',
+            'args' => ['mark'],
+        ),
+        array(
+            'title' => 'Prevent line-break',
+            'args' => ['span', 'class', 'nobr'],
+        ),
+        array(
+            'title' => 'Style',
+            'dropdown' => array(
+                array(
+                    'title' => 'Superscript',
+                    'args' => ['sup'],
+                ),
+                array(
+                    'title' => 'Subscript',
+                    'args' => ['sub'],
+                ),
+                array(
+                    'title' => 'Source citation',
+                    'args' => ['cite'],
+                ),
+                array(
+                    'title' => 'Keyboard input',
+                    'args' => ['kdb'],
+                ),
+                array(
+                    'title' => 'Small print',
+                    'args' => ['small'],
+                ),
+                array(
+                    'title' => 'Deleted',
+                    'args' => ['del'],
+                ),
+                array(
+                    'title' => 'Inserted',
+                    'args' => ['ins'],
+                ),
+                array(
+                    'title' => 'Remove all styles',
+                    'clear' => true,
+                ),
+            ),
+        ),
+    ),
 );
