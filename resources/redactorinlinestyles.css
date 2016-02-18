@@ -72,13 +72,13 @@
 }
 
 .redactor-dropdown-blockquote span {
-	color: #777 !important;
+  color: #777 !important;
 }
 
 .redactor-dropdown-superscript span,
 .redactor-dropdown-subscript span,
 .redactor-dropdown-smallprint span {
-	font-size: 0.75em;
+  font-size: 0.75em;
 }
 
 .redactor-dropdown-quote span,
@@ -86,7 +86,7 @@
 .redactor-dropdown-quote span:after,
 .redactor-dropdown-sourcecitation span {
   position: relative;
-	font-style: italic;
+  font-style: italic;
   color: #777 !important;
 }
 
@@ -97,12 +97,12 @@
 }
 
 .redactor-dropdown-quote span:before {
-	content: open-quote;
+  content: open-quote;
   left: -0.1em;
 }
 
 .redactor-dropdown-quote span:after {
-	content: close-quote;
+  content: close-quote;
   right: -0.1em;
 }
 
@@ -116,7 +116,7 @@
 }
 
 .redactor-dropdown-keyboardinput span {
-	background-color: #aaa;
+  background-color: #aaa;
   color: #fff !important;
 }
 
@@ -125,7 +125,7 @@
 .redactor-dropdown-css span,
 .redactor-dropdown-js span,
 .redactor-dropdown-php span {
-	background-color: #ddd;
+  background-color: #ddd;
 }
 
 .redactor-dropdown-deleted span {
@@ -140,7 +140,7 @@
 }
 
 .redactor-dropdown-marked span {
-	background-color: #ff8;
+  background-color: #ff8;
 }
 
 .redactor-dropdown-preventlinebreak span {
@@ -151,16 +151,16 @@
 .redactor-dropdown-preventlinebreak span:after {
   position: absolute;
   font-size: 1.25em;
-	color: #bbb;
+  color: #bbb;
 }
 
 .redactor-dropdown-preventlinebreak span:before {
-	content: '[';
+  content: '[';
   left: -0.1em;
 }
 
 .redactor-dropdown-preventlinebreak span:after {
-	content: ']';
+  content: ']';
   right: -0.1em;
 }
 
@@ -170,30 +170,30 @@
 
 .redactor-editor sup,
 .redactor-editor sub {
-	position: relative;
-	vertical-align: baseline;
-	top: -0.5em;
-	font-size: 0.75em;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+  font-size: 0.75em;
 }
 
 .redactor-editor sub {
-	top: 0.3em;
+  top: 0.3em;
 }
 
 .redactor-editor q,
 .redactor-editor q:before,
 .redactor-editor q:after,
 .redactor-editor cite {
-	font-style: italic;
+  font-style: italic;
   color: #777;
 }
 
 .redactor-editor q:before {
-	content: open-quote;
+  content: open-quote;
 }
 
 .redactor-editor q:after {
-	content: close-quote;
+  content: close-quote;
 }
 
 .redactor-editor mark,
@@ -210,25 +210,25 @@
 }
 
 .redactor-editor kbd {
-	background-color: #aaa !important;
+  background-color: #aaa !important;
   color: #fff;
 }
 
 .redactor-editor code {
-	background-color: #ddd !important;
+  background-color: #ddd !important;
 }
 
 .redactor-editor small {
-	font-size: 0.75em;
+  font-size: 0.75em;
 }
 
 .redactor-editor ins {
-	border-bottom: 1px dotted #777;
+  border-bottom: 1px dotted #777;
   text-decoration: none !important;
 }
 
 .redactor-editor mark {
-	background-color: #ff8 !important;
+  background-color: #ff8 !important;
 }
 
 .redactor-editor nobr {
@@ -237,15 +237,15 @@
 
 .redactor-editor nobr:before,
 .redactor-editor nobr:after {
-	color: #bbb;
+  color: #bbb;
 }
 
 .redactor-editor nobr:before {
-	content: '[';
+  content: '[';
 }
 
 .redactor-editor nobr:after {
-	content: ']';
+  content: ']';
 }
 
 .redactor-editor .align-left {

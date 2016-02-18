@@ -102,7 +102,7 @@ RedactorPlugins.inlinestyles = function()
                   this.button.setIcon(button, this.inlinestyles.getIconHtml(iconId));
               }
           }, this));
-  			}, this), 0);
+        }, this), 0);
       }
     },
 

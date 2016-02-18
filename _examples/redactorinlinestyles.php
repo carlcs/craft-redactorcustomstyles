@@ -7,10 +7,10 @@
  *
  * Additional file settings only available in this plugin configuration file (use environment variables
  * or root-relative path to configure the URLs):
- * - iconsFile: The URL to a SVG sprite file with toolbar icons.
  * - cssFile:   The URL to a CSS fie with custom toolbar and editor styles.
+ * - iconsFile: The URL to a SVG sprite file with toolbar icons.
  *
- * The example.svg sprite contains Google Material Icons and was created with the Icomoon App
+ * The cp.svg example sprite contains Google Material Icons and was created with the Icomoon App
  * https://icomoon.io/app
  */
 return array(
