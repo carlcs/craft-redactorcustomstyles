@@ -125,8 +125,28 @@ RedactorPlugins.inlinestyles = function()
         '</svg>';
     },
 
+    cleanObject: function(obj)
+    {
+      for (var k in obj)
+      {
+        if (obj[k] === null)
+        {
+          obj instanceof Array ? obj.splice(k, 1) : delete obj[k];
+        }
+        else if (typeof obj[k] == "object")
+        {
+          this.inlinestyles.cleanObject(obj[k]);
+        }
+      }
+    },
+
     getConfig: function(s)
     {
+      if (this.opts[s] instanceof Array)
+      {
+        this.inlinestyles.cleanObject(this.opts[s]);
+      }
+
       return s in this.opts ? this.opts[s] : RedactorInlineStyles.config[s];
     },
 
