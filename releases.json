@@ -5,7 +5,7 @@
     "date": "2016-03-09T22:00:00+01:00",
     "critical": true,
     "notes": [
-      "[Fixed] Fixed a Javascript error that occurred in Craft 2.6 when the Redactor config file had arrays with NULL values in it (e.g., caused by a trailing comma)."
+      "[Fixed] Fixed a Javascript error that occurred in Craft 2.6 when the Redactor config file had arrays with NULL values in it (e.g., caused by a trailing comma).",
       "[Improved] Updated JSON config files in the examples folder, removed trailing commas."
     ]
   },
