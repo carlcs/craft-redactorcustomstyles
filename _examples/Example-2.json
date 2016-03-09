@@ -9,14 +9,14 @@
     "italic": "italic",
     "lists": "lists",
     "link": "link",
-    "fullscreen": "fullscreen",
+    "fullscreen": "fullscreen"
   },
   "buttonsAddAfter": "italic",
   "buttonsAdd": [
     {
       "title": "Quote",
       "icon": "quote",
-      "args": ["q"],
+      "args": ["q"]
     },
     {
       "title": "Code",
@@ -24,31 +24,31 @@
       "dropdown": [
         {
           "title": "HTML/Twig",
-          "args": ["code","class","language-twig"],
+          "args": ["code","class","language-twig"]
         },
         {
           "title": "CSS",
-          "args": ["code","class","language-css"],
+          "args": ["code","class","language-css"]
         },
         {
           "title": "JS",
-          "args": ["code","class","language-js"],
+          "args": ["code","class","language-js"]
         },
         {
           "title": "PHP",
-          "args": ["code","class","language-php"],
-        },
-      ],
+          "args": ["code","class","language-php"]
+        }
+      ]
     },
     {
       "title": "Marked",
       "icon": "marked",
-      "args": ["mark"],
+      "args": ["mark"]
     },
     {
       "title": "Prevent line-break",
       "icon": "preventlinebreak",
-      "args": ["span","class","nobr"],
+      "args": ["span","class","nobr"]
     },
     {
       "title": "Style",
@@ -57,37 +57,37 @@
       "dropdown": [
         {
           "title": "Superscript",
-          "args": ["sup"],
+          "args": ["sup"]
         },
         {
           "title": "Subscript",
-          "args": ["sub"],
+          "args": ["sub"]
         },
         {
           "title": "Source citation",
-          "args": ["cite"],
+          "args": ["cite"]
         },
         {
           "title": "Keyboard input",
-          "args": ["kbd"],
+          "args": ["kbd"]
         },
         {
           "title": "Small print",
-          "args": ["small"],
+          "args": ["small"]
         },
         {
           "title": "Deleted",
-          "args": ["del"],
+          "args": ["del"]
         },
         {
           "title": "Inserted",
-          "args": ["ins"],
+          "args": ["ins"]
         },
         {
           "title": "Remove all styles",
-          "clear": true,
-        },
-      ],
-    },
-  ],
+          "clear": true
+        }
+      ]
+    }
+  ]
 }

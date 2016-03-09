@@ -1,4 +1,9 @@
 {
+  /**
+   * IMPORTANT
+   * Comments are not allowed in JSON. This example file is invalid without removing them, it won't
+   * work as is in Craft 2.6+!
+   */
   "buttons": ["format","bold","italic","lists","file","image","link","horizontalrule"],
   "plugins": ["inlinestyles","source","video","table","fullscreen"],
   "toolbarFixed": false,
@@ -44,7 +49,7 @@
     "justify": "justify",
     "alignment": "alignment",
     "color": "color",
-    "style": "ellipsis",
+    "style": "ellipsis"
   },
 
   /**
@@ -72,154 +77,154 @@
   "buttonsAdd": [
     {
       "title": "Superscript",
-      "args": ["sup"],
+      "args": ["sup"]
     },
     {
       "title": "Subscript",
-      "args": ["sub"],
+      "args": ["sub"]
     },
     {
       "title": "Quote",
-      "args": ["q"],
+      "args": ["q"]
     },
     {
       "title": "Source citation",
-      "args": ["cite"],
+      "args": ["cite"]
     },
     {
       "title": "Keyboard input",
-      "args": ["kbd"],
+      "args": ["kbd"]
     },
     {
       "title": "Code",
-      "args": ["code"],
+      "args": ["code"]
     },
     {
       "title": "Small print",
-      "args": ["small"],
+      "args": ["small"]
     },
     {
       "title": "Deleted",
-      "args": ["del"],
+      "args": ["del"]
     },
     {
       "title": "Inserted",
-      "args": ["ins"],
+      "args": ["ins"]
     },
     {
       "title": "Marked",
-      "args": ["mark"],
+      "args": ["mark"]
     },
     {
       "title": "Remove all styles",
-      "clear": true,
+      "clear": true
     },
     {
       "title": "Prevent line-break",
-      "args": ["span","class","nobr"],
+      "args": ["span","class","nobr"]
     },
     {
       "title": "Color",
       "dropdown": [
         {
           "title": "Blue",
-          "args": ["em","class","color--blue"],
+          "args": ["em","class","color--blue"]
         },
         {
           "title": "Green",
-          "args": ["em","class","color--green"],
-        },
-      ],
+          "args": ["em","class","color--green"]
+        }
+      ]
     },
     {
       "title": "Style",
       "dropdown": [
         {
           "title": "Superscript",
-          "args": ["sup"],
+          "args": ["sup"]
         },
         {
           "title": "Subscript",
-          "args": ["sub"],
+          "args": ["sub"]
         },
         {
           "title": "Quote",
-          "args": ["q"],
+          "args": ["q"]
         },
         {
           "title": "Source citation",
-          "args": ["cite"],
+          "args": ["cite"]
         },
         {
           "title": "Keyboard input",
-          "args": ["kbd"],
+          "args": ["kbd"]
         },
         {
           "title": "Code",
-          "args": ["code"],
+          "args": ["code"]
         },
         {
           "title": "Small print",
-          "args": ["small"],
+          "args": ["small"]
         },
         {
           "title": "Deleted",
-          "args": ["del"],
+          "args": ["del"]
         },
         {
           "title": "Inserted",
-          "args": ["ins"],
+          "args": ["ins"]
         },
         {
           "title": "Marked",
-          "args": ["mark"],
+          "args": ["mark"]
         },
         {
           "title": "Prevent line-break",
-          "args": ["span","class","nobr"],
+          "args": ["span","class","nobr"]
         },
         {
           "title": "Remove all styles",
-          "clear": true,
-        },
-      ],
+          "clear": true
+        }
+      ]
     },
     {
       "title": "Align left",
-      "args": ["p","class","align-left"],
+      "args": ["p","class","align-left"]
     },
     {
       "title": "Align right",
-      "args": ["p","class","align-right"],
+      "args": ["p","class","align-right"]
     },
     {
       "title": "Align center",
-      "args": ["p","class","align-center"],
+      "args": ["p","class","align-center"]
     },
     {
       "title": "Justify",
-      "args": ["p","class","align-justify"],
+      "args": ["p","class","align-justify"]
     },
     {
       "title": "Alignment",
       "dropdown": [
         {
           "title": "Align left",
-          "args": ["p","class","align-left"],
+          "args": ["p","class","align-left"]
         },
         {
           "title": "Align right",
-          "args": ["p","class","align-right"],
+          "args": ["p","class","align-right"]
         },
         {
           "title": "Align center",
-          "args": ["p","class","align-center"],
+          "args": ["p","class","align-center"]
         },
         {
           "title": "Justify",
-          "args": ["p","class","align-justify"],
-        },
-      ],
-    },
-  ],
+          "args": ["p","class","align-justify"]
+        }
+      ]
+    }
+  ]
 }
