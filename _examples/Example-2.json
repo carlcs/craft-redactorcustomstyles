@@ -48,7 +48,7 @@
     {
       "title": "Prevent line-break",
       "icon": "preventlinebreak",
-      "args": ["span","class","nobr"]
+      "args": ["nobr"]
     },
     {
       "title": "Style",

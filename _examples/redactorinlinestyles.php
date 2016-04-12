@@ -68,7 +68,7 @@ return array(
         ),
         array(
             'title' => 'Prevent line-break',
-            'args' => ['span', 'class', 'nobr'],
+            'args' => ['nobr'],
         ),
         array(
             'title' => 'Style',
