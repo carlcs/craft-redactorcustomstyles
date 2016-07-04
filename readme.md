@@ -44,9 +44,7 @@ Elements available without further plugin configuration:
 - `<del>`: Deleted
 - `<ins>`: Inserted
 - `<mark>`: Marked
-- `<nobr>`: Prevent line-break
-
-Note: The `<nobr>` tag is not standard HTML and should not be used. But as Redactor currently doesn't allow to add `<span>` tags at all, the plugin uses `<nobr>` that you should replace in your Template with `<span style="white-space: nowrap">`.
+- `<span class="nobr">`: Prevent line-break
 
 ## Configuration
 
@@ -71,7 +69,3 @@ It is also possible to configure the plugin with a redactorinlinestyles.php
 ## Requirements
 
 Redactor Inline Styles requires Craft 2.5 or above.
-
-## Known Issues
-
-- It's not possible to add `<span>` tags (Redactor bug).
