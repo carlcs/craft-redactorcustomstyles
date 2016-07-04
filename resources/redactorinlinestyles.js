@@ -72,15 +72,17 @@ RedactorPlugins.inlinestyles = function()
         this.inline.removeFormat();
       }
 
-      if (typeof args[0] !== 'undefined')
+      if (typeof args !== 'undefined')
       {
         var type = (this.utils.isBlockTag(args[0])) ? 'block' : 'inline';
 
-        this[type].format(args[0]);
-
-        if (args.length === 3)
+        switch(args.length)
         {
-          this[type].toggleAttr(args[1], args[2]);
+          case 1: this[type].format(args[0]); break;
+          case 2: this[type].format(args[0], args[1]); break;
+          case 3: this[type].format(args[0], args[1], args[2]); break;
+          case 4: this[type].format(args[0], args[1], args[2], args[3]); break;
+          default: throw new Error('Illegal argument count');
         }
       }
     },
