@@ -116,7 +116,7 @@
     },
     {
       "title": "Prevent line-break",
-      "args": ["nobr"]
+      "args": ["span","class","nobr"]
     },
     {
       "title": "Color",
@@ -176,7 +176,7 @@
         },
         {
           "title": "Prevent line-break",
-          "args": ["nobr"]
+          "args": ["span","class","nobr"]
         },
         {
           "title": "Remove all styles",

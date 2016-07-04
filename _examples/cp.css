@@ -280,20 +280,20 @@
   background-color: #ff8 !important;
 }
 
-.redactor-editor nobr {
+.redactor-editor .nobr {
   white-space: nowrap;
 }
 
-.redactor-editor nobr:before,
-.redactor-editor nobr:after {
+.redactor-editor .nobr:before,
+.redactor-editor .nobr:after {
   color: #bbb;
 }
 
-.redactor-editor nobr:before {
+.redactor-editor .nobr:before {
   content: '[';
 }
 
-.redactor-editor nobr:after {
+.redactor-editor .nobr:after {
   content: ']';
 }
 

@@ -53,7 +53,7 @@ return array(
                 ),
                 array(
                     'title' => 'Prevent line-break',
-                    'args' => ['nobr'],
+                    'args' => ['span', 'class', 'nobr'],
                 ),
                 array(
                     'title' => 'Remove all styles',
