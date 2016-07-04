@@ -1,5 +1,14 @@
 [
   {
+    "version": "2.0.5",
+    "downloadUrl": "https://github.com/carlcs/craft-redactorinlinestyles/archive/v2.0.5.zip",
+    "date": "2016-07-05T09:00:00+01:00",
+    "notes": [
+      "[Improved] The plugin now uses a different Redactor API to apply attributes to tags, `inline.format` now seems to work reliably to apply them (Redactor 1.2.5).",
+      "[Improved] Prevent line-breaks button now uses `<span>` tags again, now that Redactor doesn’t strip them any longer (Redactor 1.2.5)."
+    ]
+  },
+  {
     "version": "2.0.4",
     "downloadUrl": "https://github.com/carlcs/craft-redactorinlinestyles/archive/v2.0.4.zip",
     "date": "2016-03-09T22:00:00+01:00",
