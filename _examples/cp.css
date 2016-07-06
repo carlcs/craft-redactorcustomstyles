@@ -83,36 +83,6 @@
 }
 
 /**
- * Tooltips
- */
-
-.re-button-tooltip {
-  position: relative;
-}
-
-.re-button-tooltip:not(.dropact):hover:after {
-  opacity: 1;
-}
-
-.re-button-tooltip:after {
-  opacity: 0;
-  pointer-events: none;
-  content: attr(aria-label);
-  z-index: 10;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 42px;
-  padding: 4px 7px;
-  border-radius: 2px;
-  background: #000;
-  color: #fff;
-  white-space: nowrap;
-  font-weight: normal;
-  font-style: normal;
-}
-
-/**
  * Toolbar dropdown options
  */
 

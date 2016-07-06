@@ -20,9 +20,6 @@ RedactorPlugins.inlinestyles = function()
 
       // Set (additional) button icons
       this.inlinestyles.changeButtonIcons();
-
-      // Add tooltips to icon buttons
-      this.inlinestyles.addButtonTooltips();
     },
 
     addButtons: function()
@@ -108,13 +105,6 @@ RedactorPlugins.inlinestyles = function()
       }
     },
 
-    addButtonTooltips: function()
-    {
-      setTimeout(function() {
-        $('.re-button:has(svg)').addClass('re-button-tooltip');
-      }, 0);
-    },
-
     createClassName: function(str)
     {
       return str.replace(/[^a-zA-Z]/g, '').toLowerCase();
@@ -127,28 +117,8 @@ RedactorPlugins.inlinestyles = function()
         '</svg>';
     },
 
-    cleanObject: function(obj)
-    {
-      for (var k in obj)
-      {
-        if (obj[k] === null)
-        {
-          obj instanceof Array ? obj.splice(k, 1) : delete obj[k];
-        }
-        else if (typeof obj[k] == "object")
-        {
-          this.inlinestyles.cleanObject(obj[k]);
-        }
-      }
-    },
-
     getConfig: function(s)
     {
-      if (this.opts[s] instanceof Array)
-      {
-        this.inlinestyles.cleanObject(this.opts[s]);
-      }
-
       return s in this.opts ? this.opts[s] : RedactorInlineStyles.config[s];
     },
 
