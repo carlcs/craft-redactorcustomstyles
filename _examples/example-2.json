@@ -1,5 +1,5 @@
 {
-  "buttons": ["format","bold","italic","lists","link","horizontalrule"], // + "ul","ol","image","file"
+  "buttons": ["format","bold","italic","lists","link"], // + "ul","ol","image","file","horizontalrule"
   "plugins": ["fullscreen","inlinestyles"], // + "source","table","video"
   "toolbarFixed": false,
 
