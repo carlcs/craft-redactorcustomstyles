@@ -1,5 +1,18 @@
 [
   {
+    "version": "2.1.0",
+    "downloadUrl": "https://github.com/carlcs/craft-redactorinlinestyles/archive/v2.1.0.zip",
+    "date": "2016-07-11T09:00:00+01:00",
+    "notes": [
+      "[Improved] It is no longer possible to configure icons for toolbar buttons, the feature is now available in a separate plugin [Redactor Icon Buttons](https://github.com/carlcs/craft-redactoriconbuttons).",
+      "[Improved] The `buttonsAdd` setting now allows to explicitly set the buttons’ indexes, this allows to use the same syntax in `buttonsAdd` and in `formattingAdd`.",
+      "[Improved] The plugin no longer comes with pre-configued default buttons. Please use the provided example files as a starting point instead.",
+      "[Improved] `buttonsAdd` and `buttonsAddAfter` as settings in redactorinlinestyles.php config files are now deprecated.",
+      "[Improved] Custom CSS files for the Control Panel are now automatically included from the craft/config/cp/ folder. The `cssFile` config setting is now deprecated.",
+      "[Improved] The plugin now requires PHP 5.4+."
+    ]
+  },
+  {
     "version": "2.0.5",
     "downloadUrl": "https://github.com/carlcs/craft-redactorinlinestyles/archive/v2.0.5.zip",
     "date": "2016-07-05T09:00:00+01:00",
@@ -33,7 +46,7 @@
       "[Added] Added tooltips to icon buttons.",
       "[Added] Added a color dropdown to the Example-1 configuration.",
       "[Improved] The plugin's default configuration now uses the new textual style buttons. Removed the media query to show icons for smaller viewport widths.",
-      "[Improved] Disabled button active state styles, they only worked for `<strong>` and `<em>` buttons.",
+      "[Improved] Disabled button active state styles, they only worked for `<strong>` and `<em>` buttons."
     ]
   },
   {
