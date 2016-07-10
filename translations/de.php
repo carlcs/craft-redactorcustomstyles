@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     'Superscript' => 'Hochgestellt',
     'Subscript' => 'Tiefgestellt',
     'Quote' => 'Zitat',
@@ -19,4 +19,4 @@ return array(
     'Justify' => 'Blocksatz',
     'Alignment' => 'Ausrichtung',
     'Style' => 'Stil',
-);
+];

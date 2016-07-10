@@ -1,0 +1,133 @@
+{
+  "buttons": ["format","bold","italic","lists","link","horizontalrule"], // + "ul","ol","image","file"
+  "plugins": ["fullscreen","inlinestyles"], // + "source","table","video"
+  "toolbarFixed": false,
+
+  "formatting": false,
+  "formattingAdd": {
+    "p": {
+      "title": "Paragraph",
+      "args": ["p"]
+    },
+    "h3": {
+      "title": "Heading",
+      "args": ["h3"]
+    },
+    "h4": {
+      "title": "Subheading",
+      "args": ["h4"]
+    }
+  },
+
+  /**
+   * Sets the default position of Redactor Inline Styles buttons in the toolbar.
+   */
+  "buttonsAddAfter": "italic",
+
+  /**
+   * Adds additional buttons to your toolbar.
+   *
+   * Configure the buttons using the following properties:
+   * - title:    Sets the button's title. It's also used to create a class name that gets added to the element in
+   *             the toolbar. If you provide an index with the button configs, the index will be used instead.
+   * - addAfter: Sets the button's position in the toolbar.
+   *
+   * Use either the dropdown property to make your button trigger a dropdown:
+   * - dropdown: Configures the dropdown options and accepts a set button configs.
+   *
+   * Or give your button a callback action using the following properties:
+   * - args:     The HTML element to wrap the selected text (for inline elements) or the HTML element to be
+   *             applied to the block element surrounding the selection (for block-level elements). HTML attributes
+   *             can be added to the tag like so: `["mark", "data-concern", "review"]`.
+   * - clear:    Removes all inline formatting before the tag is added.
+   */
+  "buttonsAdd": {
+    "style": {
+      "title": "Style",
+      "dropdown": {
+        "sup": {
+          "title": "Superscript",
+          "args": ["sup"]
+        },
+        "sub": {
+          "title": "Subscript",
+          "args": ["sub"]
+        },
+        "q": {
+          "title": "Quote",
+          "args": ["q"]
+        },
+        "cite": {
+          "title": "Source citation",
+          "args": ["cite"]
+        },
+        "kbd": {
+          "title": "Keyboard input",
+          "args": ["kbd"]
+        },
+        "code": {
+          "title": "Code",
+          "args": ["code"]
+        },
+        "small": {
+          "title": "Small print",
+          "args": ["small"]
+        },
+        "del": {
+          "title": "Deleted",
+          "args": ["del"]
+        },
+        "ins": {
+          "title": "Inserted",
+          "args": ["ins"]
+        },
+        "mark": {
+          "title": "Marked",
+          "args": ["mark"]
+        },
+        "nobr": {
+          "title": "Prevent line-break",
+          "args": ["span","class","nobr"]
+        },
+        "remove": {
+          "title": "Remove all styles",
+          "clear": true
+        }
+      }
+    },
+    "color": {
+      "title": "Color",
+      "dropdown": {
+        "color-blue": {
+          "title": "Blue",
+          "args": ["em","class","color-blue"]
+        },
+        "color-green": {
+          "title": "Green",
+          "args": ["em","class","color-green"]
+        }
+      }
+    },
+    "align": {
+      "title": "Alignment",
+      "dropdown": {
+        "align-left": {
+          "title": "Align left",
+          "args": ["p","class","align-left"]
+        },
+        "align-right": {
+          "title": "Align right",
+          "args": ["p","class","align-right"]
+        },
+        "align-center": {
+          "title": "Align center",
+          "args": ["p","class","align-center"]
+        },
+        "align-justify": {
+          "title": "Justify",
+          "args": ["p","class","align-justify"]
+        }
+      }
+    }
+  }
+}

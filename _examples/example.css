@@ -1,0 +1,261 @@
+/**
+ * Custom Redactor editor stylesheet
+ *
+ * Create a folder craft/config/cp/, add this CSS file to it and the styles will be included
+ * with every CP page request automatically.
+ */
+
+/**
+ * Base editor overrides
+ */
+
+.redactor-editor {
+  font-family: HelveticaNeue, sans-serif;
+  font-size: 14px !important;
+}
+
+.redactor-editor h2,
+.redactor-editor h3,
+.redactor-editor h4 {
+  font-weight: normal;
+}
+
+.redactor-editor mark,
+.redactor-editor code,
+.redactor-editor samp,
+.redactor-editor kbd {
+  display: inline !important;
+  padding: 0 0.25em !important;
+  border-radius: 3px !important;
+}
+
+/**
+ * Base button and dropdown overrides
+ */
+
+ .redactor-act:not(.dropact) {
+   background-color: transparent !important;
+   color: #29323d !important;
+ }
+
+ .redactor-act:not(.dropact):hover {
+   background-color: #d5d8dd !important;
+   color: #29323d !important;
+ }
+
+.redactor-dropdown li:hover a span,
+.redactor-dropdown li:hover a span:before,
+.redactor-dropdown li:hover a span:after {
+  color: #29323d !important;
+}
+
+/**
+ * Deleted, inserted, marked
+ */
+
+.redactor-editor ins {
+  border-bottom: 1px dotted #777;
+  text-decoration: none !important;
+}
+
+.redactor-editor mark {
+  background-color: #ff8 !important;
+  padding: 0.1em 0 !important;
+}
+
+.redactor-toolbar li .re-del {
+    text-decoration: none !important;
+}
+
+.redactor-dropdown-del span {
+  text-decoration: line-through !important;
+}
+
+.redactor-dropdown-ins span {
+  padding: 0 !important;
+  margin-left: 4px !important;
+  border-radius: 0 !important;
+  border-bottom: 1px dotted #777 !important;
+}
+
+.redactor-dropdown-mark span {
+  background-color: #ff8;
+}
+
+/**
+ * Quote, source citation
+ */
+
+.redactor-editor q,
+.redactor-dropdown-q {
+  quotes: '«\A0' '\A0»';  /* FR */
+  quotes: '„' '“' '‚' '‘'; /* DE */
+  quotes: '“' '”' '‘' '’'; /* EN_US */
+}
+
+.redactor-editor q,
+.redactor-editor q:before,
+.redactor-editor q:after,
+.redactor-editor cite {
+  font-style: italic;
+  color: #777;
+}
+
+.redactor-editor q:before {
+  content: open-quote;
+}
+
+.redactor-editor q:after {
+  content: close-quote;
+}
+
+.redactor-dropdown-q span,
+.redactor-dropdown-q span:before,
+.redactor-dropdown-q span:after,
+.redactor-dropdown-cite span {
+  position: relative;
+  font-style: italic;
+  color: #777;
+}
+
+.redactor-dropdown-q span:before,
+.redactor-dropdown-q span:after {
+  position: absolute;
+  top: 0;
+}
+
+.redactor-dropdown-q span:before {
+  content: open-quote;
+  left: -0.1em;
+}
+
+.redactor-dropdown-q span:after {
+  content: close-quote;
+  right: -0.1em;
+}
+
+/**
+ * Superscript, subscript, small print
+ */
+
+.redactor-editor sup,
+.redactor-editor sub,
+.redactor-editor small {
+  font-size: 0.75em;
+}
+
+.redactor-editor sup,
+.redactor-editor sub {
+  position: relative;
+  vertical-align: baseline;
+}
+
+.redactor-editor sup {
+  top: -0.5em;
+}
+
+.redactor-editor sub {
+  top: 0.3em;
+}
+
+.redactor-dropdown-sup span,
+.redactor-dropdown-sub span,
+.redactor-dropdown-small span {
+  font-size: 0.75em;
+}
+
+/**
+ * Code, Keyboard input
+ */
+
+.redactor-editor code,
+.redactor-editor samp,
+.redactor-editor kbd {
+  font-family: Menlo, Monaco, Consolas, monospace;
+}
+
+.redactor-editor code {
+  background-color: #ddd !important;
+}
+
+.redactor-editor kbd {
+  background-color: #aaa !important;
+  color: #fff;
+}
+
+.redactor-dropdown-code span,
+.redactor-dropdown-kbd span {
+  font-family: Menlo, Monaco, Consolas, monospace;
+}
+
+.redactor-dropdown-code span {
+  background-color: #ddd;
+}
+
+.redactor-dropdown-kbd span {
+  background-color: #aaa;
+  color: #fff !important;
+}
+
+.redactor-dropdown li:hover .redactor-dropdown-kbd span {
+  color: #fff !important;
+}
+
+/**
+ * Prevent line-break
+ */
+
+.redactor-editor .nobr {
+  white-space: nowrap;
+}
+
+.redactor-editor .nobr:before,
+.redactor-editor .nobr:after {
+  color: #bbb;
+}
+
+.redactor-editor .nobr:before {
+  content: '[';
+}
+
+.redactor-editor .nobr:after {
+  content: ']';
+}
+
+.redactor-dropdown-nobr span {
+  position: relative;
+}
+
+/**
+ * Alignment
+ */
+
+.redactor-editor .align-left {
+  text-align: left;
+}
+
+.redactor-editor .align-center {
+  text-align: center;
+}
+
+.redactor-editor .align-right {
+  text-align: right;
+}
+
+.redactor-editor .align-justify {
+  text-align: justify;
+}
+
+/**
+ * Colors
+ */
+
+.redactor-editor .color-blue,
+.redactor-dropdown-color-blue span {
+  color: #0000FF;
+}
+
+.redactor-editor .color-green,
+.redactor-dropdown-color-green span {
+  color: #3CB371;
+}
