@@ -50,12 +50,12 @@ Buttons and dropdowns can be configured via [Redactor config settings][1]. Confi
 
 To make the text you are formatting with your custom buttons look good in your editor, Redactor Inline Styles provides an easy way to include stylesheets with Control Panel pages.
 
-Create a folder craft/config/cp/, add your CSS files to it and they will be included automatically.
+Create a folder craft/config/redactorinlinestyles/, add your CSS files to it and they will be included automatically.
 
 ## Requirements
 
 - PHP 5.4 or later
-- Craft CMS 2.5 (including Redactor II) or later
+- Craft CMS 2.5 or later
 
 
   [0]: https://github.com/carlcs/craft-redactorinlinestyles/releases/latest
