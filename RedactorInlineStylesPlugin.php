@@ -63,6 +63,16 @@ class RedactorInlineStylesPlugin extends BasePlugin
         }
     }
 
+    /**
+     * Registers resource paths for requests starting with config/redactorinlinestyles/.
+     */
+    public function getResourcePath($path)
+    {
+        if (strncmp($path, 'config/redactorinlinestyles/', 28) == 0) {
+            return craft()->path->getConfigPath().'redactorinlinestyles/'.substr($path, 28);
+        }
+    }
+
     // Protected Methods
     // =========================================================================
 
@@ -86,22 +96,24 @@ class RedactorInlineStylesPlugin extends BasePlugin
     }
 
     /**
-     * Includes resources for the Control Panel from the craft/config/cp/ folder.
+     * Includes resources for the Control Panel from the craft/config/redactorinlinestyles/ folder.
      */
     protected function includeCustomCpResources()
     {
-        $resourcesFolderPath = craft()->path->getConfigPath().'cp/';
+        $folderPath = craft()->path->getConfigPath().'redactorinlinestyles/';
 
-        if (IOHelper::folderExists($resourcesFolderPath)) {
-            $resourcesPaths = glob($resourcesFolderPath.'*.{css,js}', GLOB_BRACE);
+        if (IOHelper::folderExists($folderPath)) {
+            $filePaths = glob($folderPath.'*.{css,js}', GLOB_BRACE);
 
-            foreach ($resourcesPaths as $resourcePath) {
-                switch (IOHelper::getExtension($resourcePath)) {
+            foreach ($filePaths as $filePath) {
+                $resourcePath = 'config/redactorinlinestyles/'.str_replace($folderPath, '', $filePath);
+
+                switch (IOHelper::getExtension($filePath)) {
                     case 'css':
-                        craft()->templates->includeCss(IOHelper::getFileContents($resourcePath));
+                        craft()->templates->includeCssResource($resourcePath);
                         break;
                     case 'js':
-                        craft()->templates->includeJs(IOHelper::getFileContents($resourcePath));
+                        craft()->templates->includeJsResource($resourcePath);
                         break;
                 }
             }
