@@ -1,5 +1,12 @@
 [
   {
+    "version": "2.1.1",
+    "downloadUrl": "https://github.com/carlcs/craft-redactorinlinestyles/archive/v2.1.1.zip",
+    "date": "2016-07-12T12:00:00+01:00",
+      "[Improved] Custom CSS files for the Control Panel are now automatically included from the craft/config/redactorinlinestyles/ folder."
+    ]
+  },
+  {
     "version": "2.1.0",
     "downloadUrl": "https://github.com/carlcs/craft-redactorinlinestyles/archive/v2.1.0.zip",
     "date": "2016-07-11T09:00:00+01:00",
