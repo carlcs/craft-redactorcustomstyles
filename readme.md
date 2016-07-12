@@ -18,7 +18,7 @@ Enable the plugin in your [Redactor config files][1] stored in craft/config/reda
 
 Redactor Inline Styles comes with [example configuration files][2]. Use them as a starting point for your own editor and toolbar customizations.
 
-#### Redactor Config Settings
+### Redactor Config Settings
 
 Buttons and dropdowns can be configured via [Redactor config settings][1]. Configure them to make your editor formatting options match the styles available in your website or application. Note that it is also possible to configure formatting options to style block-level elements (regardless of the plugin name).
 
@@ -46,7 +46,7 @@ Buttons and dropdowns can be configured via [Redactor config settings][1]. Confi
 }
 ```
 
-#### Control Panel Stylesheets
+### Control Panel Stylesheets
 
 To make the text you are formatting with your custom buttons look good in your editor, Redactor Inline Styles provides an easy way to include stylesheets with Control Panel pages.
 
