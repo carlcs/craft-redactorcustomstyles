@@ -1,6 +1,6 @@
 {
   "buttons": ["format","bold","italic","lists","link"], // + "ul","ol","image","file","horizontalrule"
-  "plugins": ["fullscreen","inlinestyles"], // + "source","table","video"
+  "plugins": ["fullscreen","inlinestyles"], // + "source","table","video","pagebreak"
   "toolbarFixed": false,
 
   "formatting": false,
