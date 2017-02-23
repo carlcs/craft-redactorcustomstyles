@@ -1,6 +1,6 @@
 # Redactor Inline Styles plugin for Craft CMS
 
-![Redactor Inline Styles](https://github.com/carlcs/craft-redactorinlinestyles/blob/master/resources/screenshot.png)
+<img src="https://github.com/carlcs/craft-redactorinlinestyles/blob/master/resources/screenshot.png" width="515" height="285">
 
 Redactor Inline Styles makes it possible to add additional formatting buttons and dropdown lists to your Redactor editor toolbar in Craft CMS.
 
