@@ -10,7 +10,7 @@ class RedactorInlineStylesPlugin extends BasePlugin
 
     public function getVersion()
     {
-        return '2.1.2';
+        return '2.1.3';
     }
 
     public function getSchemaVersion()
@@ -84,7 +84,7 @@ class RedactorInlineStylesPlugin extends BasePlugin
         // Include JS
         craft()->templates->includeJsResource('redactorinlinestyles/redactorinlinestyles.js');
 
-        // Include CSS
+        // Include custom resources (setting is enabled by default)
         $includeCustomCpResources = craft()->config->get('includeCustomCpResources', 'redactorinlinestyles');
         if (filter_var($includeCustomCpResources, FILTER_VALIDATE_BOOLEAN)) {
             $this->includeCustomCpResources();
