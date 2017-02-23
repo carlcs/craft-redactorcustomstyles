@@ -9,21 +9,49 @@
  * Base editor overrides
  */
 
-.redactor-editor {
-  font-family: HelveticaNeue, sans-serif;
-  font-size: 14px !important;
+.redactor-styles,
+.redactor-toolbar,
+.redactor-dropdown {
+  font-family: HelveticaNeue, sans-serif !important;
 }
 
-.redactor-editor h2,
-.redactor-editor h3,
-.redactor-editor h4 {
-  font-weight: normal;
+.redactor-styles {
+  font-size: 13px !important;
+  line-height: 18px !important;
+  padding: 10px 7px 15px 7px !important;
 }
 
-.redactor-editor mark,
-.redactor-editor code,
-.redactor-editor samp,
-.redactor-editor kbd {
+.redactor-styles h1,
+.redactor-styles h2,
+.redactor-styles h3,
+.redactor-styles h4,
+.redactor-styles h5,
+.redactor-styles h6,
+.redactor-dropdown-h1,
+.redactor-dropdown-h2,
+.redactor-dropdown-h3,
+.redactor-dropdown-h4,
+.redactor-dropdown-h5,
+.redactor-dropdown-h6 {
+  font-family: HelveticaNeue, sans-serif !important;
+  font-weight: normal !important;
+}
+
+.redactor-toolbar li a {
+  font-size: 13px !important;
+  height: 26px !important;
+  padding: 7px 12px 3px !important;
+}
+
+.redactor-toolbar li a.re-button-icon {
+  font-size: 15px !important;
+  padding: 6px 12px 4px !important;
+}
+
+.redactor-styles mark,
+.redactor-styles code,
+.redactor-styles samp,
+.redactor-styles kbd {
   display: inline !important;
   padding: 0 0.25em !important;
   border-radius: 3px !important;
@@ -53,12 +81,12 @@
  * Deleted, inserted, marked
  */
 
-.redactor-editor ins {
+.redactor-styles ins {
   border-bottom: 1px dotted #777;
   text-decoration: none !important;
 }
 
-.redactor-editor mark {
+.redactor-styles mark {
   background-color: #ff8 !important;
   padding: 0.1em 0 !important;
 }
@@ -86,26 +114,26 @@
  * Quote, source citation
  */
 
-.redactor-editor q,
+.redactor-styles q,
 .redactor-dropdown-q {
   quotes: '«\A0' '\A0»';  /* FR */
   quotes: '„' '“' '‚' '‘'; /* DE */
   quotes: '“' '”' '‘' '’'; /* EN_US */
 }
 
-.redactor-editor q,
-.redactor-editor q:before,
-.redactor-editor q:after,
-.redactor-editor cite {
+.redactor-styles q,
+.redactor-styles q:before,
+.redactor-styles q:after,
+.redactor-styles cite {
   font-style: italic;
   color: #777;
 }
 
-.redactor-editor q:before {
+.redactor-styles q:before {
   content: open-quote;
 }
 
-.redactor-editor q:after {
+.redactor-styles q:after {
   content: close-quote;
 }
 
@@ -138,23 +166,23 @@
  * Superscript, subscript, small print
  */
 
-.redactor-editor sup,
-.redactor-editor sub,
-.redactor-editor small {
+.redactor-styles sup,
+.redactor-styles sub,
+.redactor-styles small {
   font-size: 0.75em;
 }
 
-.redactor-editor sup,
-.redactor-editor sub {
+.redactor-styles sup,
+.redactor-styles sub {
   position: relative;
   vertical-align: baseline;
 }
 
-.redactor-editor sup {
+.redactor-styles sup {
   top: -0.5em;
 }
 
-.redactor-editor sub {
+.redactor-styles sub {
   top: 0.3em;
 }
 
@@ -168,17 +196,17 @@
  * Code, Keyboard input
  */
 
-.redactor-editor code,
-.redactor-editor samp,
-.redactor-editor kbd {
+.redactor-styles code,
+.redactor-styles samp,
+.redactor-styles kbd {
   font-family: Menlo, Monaco, Consolas, monospace;
 }
 
-.redactor-editor code {
+.redactor-styles code {
   background-color: #ddd !important;
 }
 
-.redactor-editor kbd {
+.redactor-styles kbd {
   background-color: #aaa !important;
   color: #fff;
 }
@@ -205,20 +233,20 @@
  * Prevent line-break
  */
 
-.redactor-editor .nobr {
+.redactor-styles .nobr {
   white-space: nowrap;
 }
 
-.redactor-editor .nobr:before,
-.redactor-editor .nobr:after {
+.redactor-styles .nobr:before,
+.redactor-styles .nobr:after {
   color: #bbb;
 }
 
-.redactor-editor .nobr:before {
+.redactor-styles .nobr:before {
   content: '[';
 }
 
-.redactor-editor .nobr:after {
+.redactor-styles .nobr:after {
   content: ']';
 }
 
@@ -230,19 +258,19 @@
  * Alignment
  */
 
-.redactor-editor .align-left {
+.redactor-styles .align-left {
   text-align: left;
 }
 
-.redactor-editor .align-center {
+.redactor-styles .align-center {
   text-align: center;
 }
 
-.redactor-editor .align-right {
+.redactor-styles .align-right {
   text-align: right;
 }
 
-.redactor-editor .align-justify {
+.redactor-styles .align-justify {
   text-align: justify;
 }
 
@@ -250,12 +278,12 @@
  * Colors
  */
 
-.redactor-editor .color-blue,
+.redactor-styles .color-blue,
 .redactor-dropdown-color-blue span {
   color: #0000FF;
 }
 
-.redactor-editor .color-green,
+.redactor-styles .color-green,
 .redactor-dropdown-color-green span {
   color: #3CB371;
 }
