@@ -1,0 +1,31 @@
+.re-svg-icon {
+    width: 16px;
+    height: 16px;
+    padding-bottom: 2px;
+    vertical-align: bottom;
+}
+
+.redactor-toolbar a .re-svg-icon {
+    fill: rgba(0, 0, 0, 0.85);
+}
+
+.redactor-source-view .redactor-toolbar a .re-svg-icon {
+    fill: #fff;
+}
+
+.redactor-air a .re-svg-icon {
+    fill: rgba(255, 255, 255, 0.9);
+}
+
+.redactor-toolbar a:hover .re-svg-icon,
+.redactor-air a:hover .re-svg-icon {
+    fill: #fff;
+}
+
+.redactor-toolbar a.redactor-button-active .re-svg-icon {
+    fill: rgba(0, 0, 0, 0.4);
+}
+
+.redactor-air a.redactor-button-active .re-svg-icon {
+    fill: #fff;
+}

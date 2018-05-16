@@ -1,9 +1,39 @@
 {
-  "name": "carlcs/craft-redactorinlinestyles",
-  "description": "Redactor Inline Styles plugin for Craft CMS",
+  "name": "carlcs/craft-redactorcustomstyles",
+  "description": "Redactor Custom Styles plugin for Craft CMS",
+  "version": "3.0.0",
   "type": "craft-plugin",
+  "keywords": [
+    "redactor",
+    "styles",
+    "buttons",
+    "craftcms"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "carlcs",
+      "homepage": "https://github.com/carlcs"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/carlcs/craft-redactorcustomstyles/issues?state=open",
+    "source": "https://github.com/carlcs/craft-redactorcustomstyles",
+    "docs": "https://github.com/carlcs/craft-redactorcustomstyles",
+    "rss": "https://github.com/carlcs/craft-redactorcustomstyles/commits/v3.atom"
+  },
   "require": {
-    "composer/installers": "~1.0",
-    "php": ">=5.4.0"
+    "craftcms/cms": "^3.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "carlcs\\redactorcustomstyles\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Redactor Custom Styles",
+    "handle": "redactor-custom-styles",
+    "changelogUrl": "https://github.com/carlcs/craft-redactorcustomstyles/raw/v3/CHANGELOG.md",
+    "downloadUrl": "https://github.com/carlcs/craft-redactorcustomstyles/archive/v3.zip"
   }
 }

@@ -1,4 +1,2 @@
-*.DS_Store
-*Thumbs.db
-_notes
-composer.lock
+/node_modules/
+/mix-manifest.json

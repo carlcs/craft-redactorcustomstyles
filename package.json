@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "npm run watch",
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "@ayctor/laravel-mix-svg-sprite": "^0.1.0",
+    "cross-env": "^5.1.4",
+    "laravel-mix": "^2.1.11",
+    "svg-spritemap-webpack-plugin": "^1.0.0"
+  },
+  "dependencies": {
+    "svgxuse": "^1.2.6"
+  }
+}
