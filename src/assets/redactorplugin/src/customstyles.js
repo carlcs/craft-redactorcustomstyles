@@ -7,8 +7,8 @@
             this.toolbar = app.toolbar;
 
             this.buttons = this.opts.customStyles || this.opts.customstyles || {};
-            this.defaultAddAfter = this.opts.customStylesDefaultAddAfter || 'italic';
-            this.customButtonIcons = this.opts.customButtonIcons || {};
+            this.defaultAddAfter = this.opts.customStylesDefaultAddAfter || this.opts.customstylesdefaultaddafter || 'italic';
+            this.customButtonIcons = this.opts.customButtonIcons || this.opts.custombuttonicons || {};
             this.iconSpriteUrl = Craft.RedactorCustomStyles.iconSpriteUrl;
             this.iconIds = Craft.RedactorCustomStyles.iconIds;
         },
