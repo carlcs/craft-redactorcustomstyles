@@ -1,9 +1,23 @@
 # Changelog
 
-## 3.0.0 - 2018-05-01
+## 3.0.0 - 2018-05-16
 
 ### Added
-- Added Craft 3 compatibility.
+- Added Craft 3 and Redactor 3 compatibility.
+- Button configs now accept a `api` setting, which can be set to define the Redactor API to use.
+- It is now possible to define icons for toolbar buttons added through the plugin.
+- Icons for existing buttons can be overridden with the `customButtonIcons`
+
+### Changed
+- The plugin got renamed to Redactor Custom Styles.
+- The Redactor plugin got renamed to `customstyles`.
+- The Redactor config to define buttons got renamed to `customStyles`.
+- The Redactor config to define the default position for buttons got renamed to `customStylesDefaultAddAfter`.
+- The `args` setting for button configs is now directly passed to the Redactor API.
+- Custom CSS files for the Control Panel are now automatically included from the config/redactor/resources/ folder. The path can be configured with the `resourcesPath` config setting.
+
+### Removed
+- Removed the `clear` setting for button configs. Use `"api": "module.inline.clearformat"` instead.
 
 ## 2.1.3 - 2017-02-23
 
