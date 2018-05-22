@@ -3,7 +3,8 @@
 ## Unreleased
 
 ### Changed
-- All plugin assets are now served with versioned URLs. 
+- All plugin assets are now served with versioned URLs.
+- Redactor plugin version 2.0.0 is now added to the Composer dependencies.
 
 ## 3.0.0 - 2018-05-16
 
