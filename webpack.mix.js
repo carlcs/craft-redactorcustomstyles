@@ -8,12 +8,12 @@ const paths = {
     examplesDist: '_examples/redactor/resources',
 };
 
-mix.js(paths.src+'/customstyles.js', paths.dist+'/redactorplugin')
-    .js(paths.src+'/svg-polyfill.js', paths.dist+'/assetbundle')
-    .sass(paths.src+'/customstyles.scss', paths.dist+'/assetbundle')
+mix.js(paths.src+'/customstyles.js', paths.dist)
+    .js(paths.src+'/svg-polyfill.js', paths.dist)
+    .sass(paths.src+'/customstyles.scss', paths.dist)
     .sass(paths.examplesSrc+'/example.scss', paths.examplesDist)
     .svgSprite({
         src: paths.src+'/icons/**/*.svg',
-        filename: paths.dist+'/assetbundle/icons.svg',
+        filename: paths.dist+'/icons.svg',
         prefix: '',
     });

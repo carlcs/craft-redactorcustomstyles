@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+- All plugin assets are now served with versioned URLs. 
+
 ## 3.0.0 - 2018-05-16
 
 ### Added

@@ -48,13 +48,13 @@ class Plugin extends \craft\base\Plugin
      */
     public function registerRedactorPlugin(RegisterPluginPathsEvent $event)
     {
-        $event->paths[] = Craft::getAlias('@carlcs/redactorcustomstyles/assets/redactorplugin/dist/redactorplugin');
+        $event->paths[] = Craft::getAlias('@carlcs/redactorcustomstyles/assets/redactorplugin/_redactorplugin');
 
         $view = Craft::$app->getView();
         $view->registerAssetBundle(RedactorPluginAsset::class);
 
         if (($iconSprite = $this->_customCpAsset->iconSprite) === null) {
-            $iconSprite = '@carlcs/redactorcustomstyles/assets/redactorplugin/dist/assetbundle/icons.svg';
+            $iconSprite = '@carlcs/redactorcustomstyles/assets/redactorplugin/dist/icons.svg';
         }
 
         $iconSpriteUrl = Craft::$app->getAssetManager()->getPublishedUrl($iconSprite, true);
