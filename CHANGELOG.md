@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 3.0.1 - 2018-05-22
 
 ### Changed
 - All plugin assets are now served with versioned URLs.
