@@ -17,14 +17,6 @@ use yii\base\Event;
  */
 class Plugin extends \craft\base\Plugin
 {
-    // Properties
-    // =========================================================================
-
-    /**
-     * @var CustomCpAsset
-     */
-    private $_customCpAsset;
-
     // Public Methods
     // =========================================================================
 
@@ -36,8 +28,22 @@ class Plugin extends \craft\base\Plugin
         parent::init();
 
         if (Craft::$app->getRequest()->getIsCpRequest()) {
-            $this->_customCpAsset = Craft::$app->getView()->registerAssetBundle(CustomCpAsset::class);
             Event::on(RedactorField::class, RedactorField::EVENT_REGISTER_PLUGIN_PATHS, [$this, 'registerRedactorPlugin']);
+
+            $view = Craft::$app->getView();
+
+            /** @var CustomCpAsset $customCpAsset */
+            $customCpAsset = $view->registerAssetBundle(CustomCpAsset::class);
+            $view->registerAssetBundle(RedactorPluginAsset::class);
+
+            if (($iconSprite = $customCpAsset->iconSprite) === null) {
+                $iconSprite = '@carlcs/redactorcustomstyles/assets/redactorplugin/dist/icons.svg';
+            }
+
+            $iconSpriteUrl = Craft::$app->getAssetManager()->getPublishedUrl($iconSprite, true);
+            $iconIds = $this->getSymbolIds($iconSprite);
+
+            $view->registerJs('Craft.RedactorCustomStyles = '.Json::encode(compact('iconSpriteUrl', 'iconIds')).';');
         }
     }
 
@@ -49,17 +55,6 @@ class Plugin extends \craft\base\Plugin
     public function registerRedactorPlugin(RegisterPluginPathsEvent $event)
     {
         $event->paths[] = Craft::getAlias('@carlcs/redactorcustomstyles/assets/redactorplugin/_redactorplugin');
-
-        $view = Craft::$app->getView();
-        $view->registerAssetBundle(RedactorPluginAsset::class);
-
-        if (($iconSprite = $this->_customCpAsset->iconSprite) === null) {
-            $iconSprite = '@carlcs/redactorcustomstyles/assets/redactorplugin/dist/icons.svg';
-        }
-
-        $iconSpriteUrl = Craft::$app->getAssetManager()->getPublishedUrl($iconSprite, true);
-        $iconIds = $this->getSymbolIds($iconSprite);
-        $view->registerJs('Craft.RedactorCustomStyles = '.Json::encode(compact('iconSpriteUrl', 'iconIds')).';');
     }
 
     // Protected Methods

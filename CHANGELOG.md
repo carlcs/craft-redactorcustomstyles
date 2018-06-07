@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.0.2 - 2018-06-07
+
+### Fixed
+- Fixed a JavaScript error that could occur when the Redactor plugin was used in Matrix fields.
+
 ## 3.0.1 - 2018-05-22
 
 ### Changed
