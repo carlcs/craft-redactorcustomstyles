@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.0.3 - 2020-04-02
+
+### Changed
+- Updated styles for Craft 3.4
+
 ## 3.0.2 - 2018-06-07
 
 ### Fixed
