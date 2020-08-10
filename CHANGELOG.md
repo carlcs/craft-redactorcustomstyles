@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.0.4 - 2020-08-10
+
+### Changed
+- Updated styles for Redactor plugin 2.7
+
 ## 3.0.3 - 2020-04-02
 
 ### Changed
