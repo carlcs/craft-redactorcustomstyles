@@ -1,0 +1,11 @@
+.re-button svg {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 1px;
+    fill: currentColor;
+}
+
+.redactor.enlarged .re-button svg {
+    width: 16px;
+    height: 16px;
+}

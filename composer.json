@@ -1,7 +1,7 @@
 {
   "name": "carlcs/craft-redactorcustomstyles",
   "description": "Redactor Custom Styles plugin for Craft CMS",
-  "version": "3.0.4",
+  "version": "4.0.0",
   "type": "craft-plugin",
   "keywords": [
     "redactor",
@@ -19,12 +19,11 @@
   "support": {
     "issues": "https://github.com/carlcs/craft-redactorcustomstyles/issues?state=open",
     "source": "https://github.com/carlcs/craft-redactorcustomstyles",
-    "docs": "https://github.com/carlcs/craft-redactorcustomstyles",
-    "rss": "https://github.com/carlcs/craft-redactorcustomstyles/commits/v3.atom"
+    "docs": "https://github.com/carlcs/craft-redactorcustomstyles"
   },
   "require": {
-    "craftcms/cms": "^3.0.0",
-    "craftcms/redactor": "^2.7.0"
+    "craftcms/cms": "^4.0.0-beta.1",
+    "craftcms/redactor": "^3.0.0-beta.1"
   },
   "autoload": {
     "psr-4": {
@@ -33,8 +32,6 @@
   },
   "extra": {
     "name": "Redactor Custom Styles",
-    "handle": "redactor-custom-styles",
-    "changelogUrl": "https://github.com/carlcs/craft-redactorcustomstyles/raw/v3/CHANGELOG.md",
-    "downloadUrl": "https://github.com/carlcs/craft-redactorcustomstyles/archive/v3.zip"
+    "handle": "redactor-custom-styles"
   }
 }

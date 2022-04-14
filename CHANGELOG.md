@@ -1,5 +1,15 @@
 # Changelog
 
+## 4.0.0 - 2022-04-14
+
+### Added
+- Added Craft 4 compatibility.
+
+### Changed
+- Custom icons can now be added by uploading SVGs to the config/redactor/resources/ folder.
+- Removed build tools for example styles.
+- Removed the setting to define a custom resources path.
+
 ## 3.0.4 - 2020-08-10
 
 ### Changed

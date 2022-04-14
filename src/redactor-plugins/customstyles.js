@@ -9,8 +9,7 @@
             this.buttons = this.opts.customStyles || this.opts.customstyles || {};
             this.defaultAddAfter = this.opts.customStylesDefaultAddAfter || this.opts.customstylesdefaultaddafter || 'italic';
             this.customButtonIcons = this.opts.customButtonIcons || this.opts.custombuttonicons || {};
-            this.iconSpriteUrl = Craft.RedactorCustomStyles.iconSpriteUrl;
-            this.iconIds = Craft.RedactorCustomStyles.iconIds;
+            this.icons = Craft.RedactorCustomStyles.icons;
         },
         start: function() {
             // Add new buttons in reverse order, for expected sort order when
@@ -82,12 +81,7 @@
                 return icon;
             }
 
-            if (this.iconIds.indexOf(icon) === -1) {
-                return null;
-            }
-
-            var url = this.iconSpriteUrl+'#'+icon;
-            return '<svg class="re-svg-icon"><use xlink:href="'+url+'"></use></svg>';
+            return this.icons[icon] || null;
         },
     });
 })(Redactor);
