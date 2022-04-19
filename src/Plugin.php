@@ -5,6 +5,8 @@ namespace carlcs\redactorcustomstyles;
 use carlcs\redactorcustomstyles\assets\customcp\CustomCpAsset;
 use Craft;
 use craft\helpers\FileHelper;
+use craft\helpers\StringHelper;
+use craft\redactor\events\ModifyRedactorConfigEvent;
 use craft\redactor\Field as RedactorField;
 use craft\redactor\events\RegisterPluginPathsEvent;
 use yii\base\Event;
@@ -18,6 +20,7 @@ class Plugin extends \craft\base\Plugin
     // =========================================================================
 
     private ?array $_icons = null;
+    private array $_translations = [];
 
     // Public Methods
     // =========================================================================
@@ -39,6 +42,15 @@ class Plugin extends \craft\base\Plugin
                 fn($variables) => "Craft.RedactorCustomStyles = $variables",
                 [['icons' => $this->_getIcons()]],
             );
+
+            Event::on(RedactorField::class, RedactorField::EVENT_DEFINE_REDACTOR_CONFIG, function(ModifyRedactorConfigEvent $event) use ($view) {
+                if (($config = $event->config['customStyles'] ?? $event->config['customstyles'] ?? null) !== null) {
+                    $this->_prepareRedactorConfig($config);
+                    $event->config['customStyles'] = $config;
+
+                    $view->registerTranslations('redactor-custom-styles', $this->_translations);
+                }
+            });
         }
     }
 
@@ -66,5 +78,17 @@ class Plugin extends \craft\base\Plugin
         }
 
         return $this->_icons;
+    }
+
+    private function _prepareRedactorConfig(array &$config)
+    {
+        foreach($config as $key => &$val) {
+            $this->_translations[] = $val['title'] = $val['title']
+                ?? StringHelper::toTitleCase(implode(' ', StringHelper::toWords($key, false, true)));
+
+            if (isset($val['dropdown'])) {
+                $this->_prepareRedactorConfig($val['dropdown']);
+            }
+        }
     }
 }

@@ -43,7 +43,7 @@
         },
         addButton: function(key, config) {
             var data = {
-                title: config.title || this.getTitleFromKey(key),
+                title: Craft.t('redactor-custom-styles', config.title),
                 icon: this.getIconHtml(config.icon || key),
                 api: config.api || 'module.inline.format',
                 args: config.args,
@@ -53,7 +53,7 @@
         },
         addDropdown: function(key, config) {
             var data = {
-                title: config.title || this.getTitleFromKey(key),
+                title: Craft.t('redactor-custom-styles', config.title),
                 icon: this.getIconHtml(config.icon || key),
                 dropdown: {},
             };
@@ -62,17 +62,13 @@
                 var itemConfig = config.dropdown[itemKey];
 
                 data.dropdown[itemKey] = {
-                    title: itemConfig.title || this.getTitleFromKey(itemKey),
+                    title: Craft.t('redactor-custom-styles', itemConfig.title),
                     api: itemConfig.api || 'module.inline.format',
                     args: itemConfig.args,
                 };
             }
 
             this.toolbar.addButtonAfter(config.addAfter || this.defaultAddAfter, key, data);
-        },
-        getTitleFromKey: function(str) {
-            str = str.replace(/([A-Z])/g, ' $1').trim();
-            return str.charAt(0).toUpperCase()+str.slice(1);
         },
         getIconHtml: function(icon) {
             icon = icon.toLowerCase();
