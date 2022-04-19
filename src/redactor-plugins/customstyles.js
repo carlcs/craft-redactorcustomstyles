@@ -71,12 +71,6 @@
             this.toolbar.addButtonAfter(config.addAfter || this.defaultAddAfter, key, data);
         },
         getIconHtml: function(icon) {
-            icon = icon.toLowerCase();
-
-            if (icon.substring(0, 1) == '<') {
-                return icon;
-            }
-
             return this.icons[icon] || null;
         },
     });
