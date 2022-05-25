@@ -35,8 +35,8 @@
             const data = {
                 title: Craft.t('redactor-custom-styles', config.title),
                 icon: this.getIconHtml(config.icon || key),
-                api: config.api || 'module.inline.format',
-                args: config.args,
+                api: 'plugin.customstyles.handleButtonClick',
+                args: { api: config.api || 'module.inline.format', ...config.args },
             };
 
             this.app.toolbar.addButtonAfter(
@@ -56,8 +56,8 @@
             Object.entries(config.dropdown).forEach(([itemKey, itemConfig]) => {
                 data.dropdown[itemKey] = {
                     title: Craft.t('redactor-custom-styles', itemConfig.title),
-                    api: itemConfig.api || 'module.inline.format',
-                    args: itemConfig.args,
+                    api: 'plugin.customstyles.handleButtonClick',
+                    args: { api: itemConfig.api || 'module.inline.format', ...itemConfig.args },
                 };
             });
 
@@ -70,6 +70,11 @@
 
         getIconHtml(icon) {
             return this.icons[icon] || null;
+        },
+
+        handleButtonClick({ api, ...args }) {
+            this.app.api(api, args);
+            this.app.api('module.source.sync');
         },
     });
 })(Redactor);

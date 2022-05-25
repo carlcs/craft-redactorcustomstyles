@@ -6,6 +6,7 @@
 - Button and dropdown titles are now translatable.
 
 ### Fixed
+- Fixed a bug where content was not syncing to the input in some cases. ([#31](https://github.com/carlcs/craft-redactorcustomstyles/issues/31))
 - Fixed some specificity issues with example styles.
 
 ## 4.0.0 - 2022-04-14
