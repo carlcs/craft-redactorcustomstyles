@@ -5,6 +5,9 @@
 ### Added
 - Button and dropdown titles are now translatable.
 
+### Fixed
+- Fixed some specificity issues with example styles.
+
 ## 4.0.0 - 2022-04-14
 
 ### Added

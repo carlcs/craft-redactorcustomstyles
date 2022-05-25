@@ -14,22 +14,22 @@
     background-color: #FDFFAD;
 }
 
-.redactor-dropdown-item-deleted span {
+:root .redactor-dropdown-item-deleted span {
     text-decoration: line-through;
 }
 
-.redactor-dropdown-item-inserted span {
+:root .redactor-dropdown-item-inserted span {
     margin-left: 4px;
     padding: 0;
     border-bottom: 1px dotted rgba(0, 0, 0, .5);
     border-radius: 0;
 }
 
-.redactor-dropdown-item-inserted:hover span {
+:root .redactor-dropdown-item-inserted:hover span {
     border-color: #FFF;
 }
 
-.redactor-dropdown-item-marked span {
+:root .redactor-dropdown-item-marked span {
     background-color: #FDFFAD;
     color: #000;
     text-decoration: none;
@@ -37,7 +37,7 @@
 
 /* Quote, source citation */
 :root .redactor-styles q,
-.redactor-dropdown-item-quote span {
+:root .redactor-dropdown-item-quote span {
     quotes: '«\A0' '\A0»';  /* FR */
     quotes: '„' '“' '‚' '‘'; /* DE */
     quotes: '“' '”' '‘' '’'; /* EN_US */
@@ -59,27 +59,27 @@
     content: close-quote;
 }
 
-.redactor-dropdown-item-quote span,
-.redactor-dropdown-item-quote span:before,
-.redactor-dropdown-item-quote span:after,
-.redactor-dropdown-item-sourceCitation span {
+:root .redactor-dropdown-item-quote span,
+:root .redactor-dropdown-item-quote span:before,
+:root .redactor-dropdown-item-quote span:after,
+:root .redactor-dropdown-item-sourceCitation span {
     position: relative;
     font-style: italic;
     color: rgba(0, 0, 0, .5);
 }
 
-.redactor-dropdown-item-quote span:before,
-.redactor-dropdown-item-quote span:after {
+:root .redactor-dropdown-item-quote span:before,
+:root .redactor-dropdown-item-quote span:after {
     position: absolute;
     top: 0;
 }
 
-.redactor-dropdown-item-quote span:before {
+:root .redactor-dropdown-item-quote span:before {
     content: open-quote;
     left: -0.2em;
 }
 
-.redactor-dropdown-item-quote span:after {
+:root .redactor-dropdown-item-quote span:after {
     content: close-quote;
     right: -0.2em;
 }
@@ -87,13 +87,13 @@
 /* Superscript, subscript, small print */
 :root .redactor-styles sup,
 :root .redactor-styles sub,
-.redactor-dropdown-item-superscript span,
-.redactor-dropdown-item-subscript span {
+:root .redactor-dropdown-item-superscript span,
+:root .redactor-dropdown-item-subscript span {
     font-size: 0.8em;
 }
 
 :root .redactor-styles small,
-.redactor-dropdown-item-smallPrint span {
+:root .redactor-dropdown-item-smallPrint span {
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.7em !important;
 }
@@ -103,29 +103,29 @@
 :root .redactor-styles code,
 :root .redactor-styles var,
 :root .redactor-styles kbd,
-.redactor-dropdown-item-code span,
-.redactor-dropdown-item-variable span,
-.redactor-dropdown-item-shortcut span {
+:root .redactor-dropdown-item-code span,
+:root .redactor-dropdown-item-variable span,
+:root .redactor-dropdown-item-shortcut span {
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9em;
 }
 
 :root .redactor-styles pre,
 :root .redactor-styles code,
-.redactor-dropdown-item-code span {
+:root .redactor-dropdown-item-code span {
     background: rgba(0, 0, 0, .05);
 }
 
-.redactor-dropdown-item-code span {
+:root .redactor-dropdown-item-code span {
     border: 1px solid #F3F3F3;
 }
 
 :root .redactor-styles var,
-.redactor-dropdown-item-variable span {
+:root .redactor-dropdown-item-variable span {
     color: rgba(0, 0, 0, .5);
 }
 
-.redactor-dropdown-item-shortcut span {
+:root .redactor-dropdown-item-shortcut span {
     padding: 0.25em;
     border: 1px solid #e5e7e9;
     white-space: nowrap;
@@ -150,22 +150,22 @@
 
 /* Text color */
 :root .redactor-styles .color-red,
-.redactor-dropdown-item-red span {
+:root .redactor-dropdown-item-red span {
     color: #DA5B47;
 }
 
 :root .redactor-styles .color-green,
-.redactor-dropdown-item-green span {
+:root .redactor-dropdown-item-green span {
     color: #3CB371;
 }
 
-.redactor-dropdown-item-red:hover span,
-.redactor-dropdown-item-green:hover span {
+:root .redactor-dropdown-item-red:hover span,
+:root .redactor-dropdown-item-green:hover span {
     color: #FFF;
 }
 
 :root .redactor-styles span.favorite,
-.redactor-dropdown-item-favorite span {
+:root .redactor-dropdown-item-favorite span {
     border-radius: 2px;
     padding: 0.125em 0.25em;
     background-color: #FFEBEB;
