@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 4.0.1 - 2022-05-25
 
 ### Added
 - Button and dropdown titles are now translatable.
