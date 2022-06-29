@@ -1,11 +1,22 @@
 .re-button svg {
     width: 14px;
     height: 14px;
-    margin-bottom: 1px;
-    fill: currentColor;
 }
 
 .redactor.enlarged .re-button svg {
     width: 16px;
     height: 16px;
+}
+
+.re-button {
+    display: inline-flex !important;
+    padding: 6px 14px !important;
+}
+
+.redactor.enlarged .re-button {
+    padding: 9px 15px 8px 15px !important;
+}
+
+.redactor.enlarged .re-button-icon {
+    padding: 8px 15px 7px 15px !important;
 }
