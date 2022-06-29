@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+### Fixed
+- Fixed a bug where formatting didn’t work if `args` was set to a string in the button’s config. ([#32](https://github.com/carlcs/craft-redactorcustomstyles/issues/32))
+
 ## 4.0.1 - 2022-05-25
 
 ### Added
