@@ -4,6 +4,8 @@
 
 ### Changed
 - Added a SVG to [`_examples/redactor/resources/`](https://github.com/carlcs/craft-redactorcustomstyles/tree/main/_examples/redactor/resources) to demonstrate setup of custom icons.
+- Updated the default icon for text color.
+- Added the HTML button to the example Redactor config file.
 
 ### Fixed
 - Fixed a bug where formatting didn’t work if `args` was set to a string in the button’s config. ([#32](https://github.com/carlcs/craft-redactorcustomstyles/issues/32))
