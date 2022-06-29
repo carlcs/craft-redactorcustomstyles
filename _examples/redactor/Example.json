@@ -1,5 +1,5 @@
 {
-  "buttons": ["format", "bold", "italic", "lists", "link"],
+  "buttons": ["html", "format", "bold", "italic", "lists", "link"],
   "plugins": ["customstyles"],
   "customStyles": {
     "style": {
