@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+### Added
+- Added a link style dropdown to the example Redactor config file.
+
 ## 4.0.2 - 2022-06-29
 
 ### Changed
@@ -13,7 +18,7 @@
 
 ## 4.0.1 - 2022-05-25
 
-### Added   
+### Added
 - Button and dropdown titles are now translatable.
 
 ### Fixed

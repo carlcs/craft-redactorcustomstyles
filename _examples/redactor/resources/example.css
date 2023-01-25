@@ -170,3 +170,23 @@
     padding: 0.125em 0.25em;
     background-color: #FFEBEB;
 }
+
+/* Link style */
+:root .redactor-styles a.button-primary,
+:root .redactor-styles a.button-secondary {
+    display: inline-block;
+    padding: 7px 14px;
+    border: 2px solid;
+    border-radius: var(--large-border-radius);
+    text-decoration: none;
+}
+
+:root .redactor-styles a.button-primary {
+    color: var(--blue-800);
+    border-color: var(--blue-600);
+}
+
+:root .redactor-styles a.button-secondary {
+    color: var(--gray-500);
+    border-color: var(--gray-300);
+}

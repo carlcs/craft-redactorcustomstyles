@@ -42,6 +42,25 @@
         }
       }
     },
+    "linkStyle": {
+      "dropdown": {
+        "primaryButton": {
+          "api": "module.inline.set",
+          "args": {
+            "class": "button-primary"
+          }
+        },
+        "secondaryButton": {
+          "api": "module.inline.set",
+          "args": {
+            "class": "button-secondary"
+          }
+        },
+        "normalLink": {
+          "api": "module.inline.clearclass"
+        }
+      }
+    },
     "textColor": {
       "dropdown": {
         "red": {
