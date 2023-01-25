@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 4.0.3 - 2023-01-25
 
 ### Added
 - Added a link style dropdown to the example Redactor config file.
