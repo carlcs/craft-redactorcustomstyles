@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 5.0.0 - 2024-02-08
 
 ### Added
 - Added Craft 5 compatibility.
